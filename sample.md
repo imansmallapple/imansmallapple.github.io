@@ -1,6 +1,7 @@
 ---
 layout: page
 title: Sample Page
+parent: index
 ---
 
 # This is a Sample Page

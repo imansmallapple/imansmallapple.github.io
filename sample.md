@@ -1,6 +1,8 @@
 ---
-title: Sample test
-layout: default
+layout: page
+title: Sample Page
 ---
 
-**sample**  
+# This is a Sample Page
+
+This is the content of your sample page.

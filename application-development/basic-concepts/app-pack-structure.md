@@ -12,14 +12,14 @@ layout: default
 
 This topic explores the structure of an application package in the phase of application development.
 
-**Content table:**
-[Package Structure in the Development Phase](#package-structure-in-the-development-phase)  
-[Selecting a File Type](#selecting-a-file-type)  
+**Content table:**  
+- [Package Structure in the Development Phase](#package-structure-in-the-development-phase)  
+- [Selecting a File Type](#selecting-a-file-type)  
 
 ## Package Structure in the Development Phase  
 To have a clearer idea on the application package structure, it would be helpful if you have a project directory at hand. As such, first create a project in DevEco Studio and add modules of different types to the project.
 
-Figure 1 Project structure (for reference only)
+**Figure 1** Project structure (for reference only)  
 ![project-structure](/application-development/image-basic/image1.png)
 
 The table below lists the main file types in the project structure.
@@ -59,4 +59,4 @@ There are two types of modules by usage scenario:
 
  
   **Figure 1** HAR and HSP in the App Pack
-  ![alt text](image-basic/image2.png)
+  ![alt text](./images/image-basic/image2.png)

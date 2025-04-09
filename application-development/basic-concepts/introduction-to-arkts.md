@@ -43,13 +43,13 @@ ArkTS is optimized to provide better performance and efficiency, while still mai
 With a basic understanding of the ArkTS language, let's look into the composition of ArkTS through an example. As shown below, when the user clicks the button, the text content changes from Hello World to Hello ArkUI.  
 
   **Figure 1** Example effect drawing 
-    <img src='/application-development/image-basic/v1.gif'>
+    <img src='./images/image-basic/v1.gif'>
 
 In this example, the basic composition of ArkTS is as follows.
 
 
   **Figure 2** Basic composition of ArkTS 
-    <img src='/application-development/image-basic/image3.png'>
+    <img src='./images/image-basic/image3.png'>
 
 > **NOTE**
 >
@@ -337,7 +337,7 @@ struct RowExample {
 }
 ```
 
-<img src='/application-development/image-basic/image4.png'>
+<img src='./images/image-basic/image4.png'>
 
 #### Column
 
@@ -427,7 +427,7 @@ struct ColumnExample {
 }
 ```
 
-<img src='/application-development/image-basic/image5.png'>
+<img src='./images/image-basic/image5.png'>
 
 You can learn more about basic components [here](/application-development/basic-components/component-overview.md).
 
@@ -463,8 +463,8 @@ struct HelloComponent {
 ```
 On `Previewer`, click `Hello, World!`, the text will change into `Hello, ArkUI!`.
 <div style="text-align:center">
-    <img src='/application-development/image-basic/image6.png' width=40%>
-    <img src='/application-development/image-basic/image7.png'
+    <img src='./images/image-basic/image6.png' width=40%>
+    <img src='./images/image-basic/image7.png'
     width=40%>
 </div> 
 
@@ -490,7 +490,7 @@ struct ParentComponent {
 }
 ```
 <div style="text-align:center">
-    <img src='/application-development/image-basic/image8.png' width=60%>
+    <img src='./images/image-basic/image8.png' width=60%>
 </div> 
 
 ##### Basic Structure of a Custom Component
@@ -625,8 +625,8 @@ struct Son {
 ```
 Click the button defined in `Son`, `Text` result will be updated in `Parent`.
 <div style="text-align:center">
-    <img src='/application-development/image-basic/image9.png' width=40%>
-    <img src='/application-development/image-basic/image10.png' width=40%>
+    <img src='./images/image-basic/image9.png' width=40%>
+    <img src='./images/image-basic/image10.png' width=40%>
 </div> 
 
 ##### Rules in build Function
@@ -786,7 +786,7 @@ Whatever declared in build() are called UI descriptions. UI descriptions must co
   ```
 In ArkUI state management, UI re-render is driven by state.
 <div style="text-align:center">
-    <img src='/application-development/image-basic/image11.png' width=40%>
+    <img src='./images/image-basic/image11.png' width=40%>
 </div> 
  Therefore, do not change any state variable in the **build()** or \@Builder decorated method of a custom component. Otherwise, loop rendering may result.
 
@@ -814,7 +814,7 @@ struct MyComponent {
 }
 ```
 <div style="text-align:center">
-    <img src='/application-development/image-basic/image12.png' width=40%>
+    <img src='./images/image-basic/image12.png' width=40%>
 </div> 
 
 > **NOTE**
@@ -852,7 +852,7 @@ The following figure shows the lifecycle of a component (page) decorated with \@
 
 
 <div style="text-align:center">
-    <img src='/application-development/image-basic/image13.png'>
+    <img src='./images/image-basic/image13.png'>
 </div>
 
 The following example shows when the lifecycle callbacks are invoked:
@@ -1005,7 +1005,7 @@ In previous examples, most of the pages built are static pages, which are delive
   **Figure 1:** State managed UI 
 
 <div style="text-align:center">
-    <img src='/application-development/image-basic/v1.gif'>
+    <img src='./images/image-basic/v1.gif'>
 </div>
 
 
@@ -1016,7 +1016,7 @@ In a declarative UI framework, the UI is the result of the application’s runti
 For custom components, any variable that affects the UI must be decorated. Without a decorator, the UI renders only once at initialization and won’t update with changes. The diagram below illustrates the relationship between state and view.
 
 <div style="text-align:center">
-    <img src='/application-development/image-basic/image14.png'>
+    <img src='./images/image-basic/image14.png'>
 </div>
 
 
@@ -1089,7 +1089,7 @@ According to the data transfer mode and synchronization type, decorators can als
 The following figure illustrates the decorators. You can use these decorators at your disposal to implement linkage between data and the UI.
 
 <div style="text-align:center">
-    <img src='/application-development/image-basic/image15.png'>
+    <img src='./images/image-basic/image15.png'>
 </div>
 
 
@@ -1225,13 +1225,13 @@ In the preceding example, if **count** increases from 0 to 1, then **if** update
 
 Here is a preview of the example:
 <div style="text-align:center">
-    <img src='/application-development/image-basic/image27.png' width='50%'>
+    <img src='./images/image-basic/image27.png' width='50%'>
 </div>
 
 Click `increase count`, 'count is positive' will appear on the Previewer.
 
 <div style="text-align:center">
-    <img src='/application-development/image-basic/image28.png' width='50%'>
+    <img src='./images/image-basic/image28.png' width='50%'>
 </div>
 
 ##### if ... else ... and Child Component States
@@ -1281,7 +1281,7 @@ On first render, the **CounterView** (label: **'CounterView \#positive'**) child
 
 Here is a preview of the example:
 <div style="text-align:center">
-    <img src='/application-development/image-basic/image29.png' width='50%'>
+    <img src='./images/image-basic/image29.png' width='50%'>
 </div>
 
 
@@ -1419,7 +1419,7 @@ The figure below shows the effect.
 **Figure 1** Initial rendering when the ForEach data sources do not have the same key
 
 <div style="text-align:center">
-    <img src='/application-development/image-basic/image30.png' width='50%'>
+    <img src='./images/image-basic/image30.png' width='50%'>
 </div>
 
 In the preceding code snippets, the key generation rule is the return value **item** of the **keyGenerator** function. During **ForEach** rendering, keys (**one**, **two**, and **three**) are generated in sequence for data source array items, and corresponding child items are created and rendered to the UI.
@@ -1462,7 +1462,7 @@ The figure below shows the effect.
 
 **Figure 2** Initial rendering when the ForEach data sources have the same key
 <div style="text-align:center">
-    <img src='/application-development/image-basic/image31.png' width='50%'>
+    <img src='./images/image-basic/image31.png' width='50%'>
 </div>
 
 In this example, the final key value generation rule is **item**. When **ForEach** traverses the data source **simpleList** and finds the key **two** whose index is **1**, **ForEach** creates a component whose key is **two** based on the final key value generation rule and marks the component. When **ForEach** finds the key **two** whose index is **2**, it does not create a component, because the key of the current item is also **two** according to the final key generation rule.
@@ -1523,7 +1523,7 @@ The figure below shows the effect.
 **Figure 3** Re-rendering with ForEach
 
 <div style="text-align:center">
-    <img src='/application-development/image-basic/v11.gif' width='50%'>
+    <img src='./images/image-basic/v11.gif' width='50%'>
 </div>
 
 From this example, you can see that @State can observe changes in the primitive array items of the **simpleList** data source.

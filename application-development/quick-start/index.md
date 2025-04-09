@@ -6,7 +6,7 @@ layout: default
 has_children: true
 ---
 
-[Environment Setup and Configuration](/application-development/environment-setup-config.md)  
+[Environment Setup and Configuration](/application-development/quick-start/environment-setup-config.md)  
 
 [Create Your First Eclipse Oniro Application](/application-development/create-first-eclipse-oniro-app.md)  
 

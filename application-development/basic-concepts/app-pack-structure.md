@@ -20,7 +20,7 @@ This topic explores the structure of an application package in the phase of appl
 To have a clearer idea on the application package structure, it would be helpful if you have a project directory at hand. As such, first create a project in DevEco Studio and add modules of different types to the project.
 
 **Figure 1** Project structure (for reference only)  
-![project-structure](/application-development/image-basic/image1.png)
+![project-structure](./images/image-basic/image1.png)
 
 The table below lists the main file types in the project structure.
 > **NOTE**
@@ -58,5 +58,5 @@ There are two types of modules by usage scenario:
   | HSP  | The code and resources in the HSP are built independently, and the build product contains only one copy of the code and resources.| Generally, the HSP is packaged with the application. Intra-application HSP and integrated HSP are supported. The intra-app HSP can only be referenced in an application; the integrated HSP can be published to the ohpm private repository and referenced in cross-applications.|  
 
  
-  **Figure 1** HAR and HSP in the App Pack
+  **Figure 2** HAR and HSP in the App Pack  
   ![alt text](./images/image-basic/image2.png)

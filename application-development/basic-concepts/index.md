@@ -1,8 +1,9 @@
 ---
 title: Basic Concepts
-parent: Application Development Overview
-nav_order: 1
+parent: Application Development
+nav_order: 2
 layout: default
+has_children: true
 ---
 
 [Application Package Structure in Stage Model](/application-development/app-pack-structure.md)

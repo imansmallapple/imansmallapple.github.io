@@ -1,3 +1,8 @@
+---
+layout: default
+title: Oniro Architecture
+parent: Eclipse Oniro Project
+---
 ### Architecture  
 ![alt text](../Images/Operating-System-Architecture/oniro-architecture.jpg)
 

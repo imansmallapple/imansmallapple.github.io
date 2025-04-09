@@ -4,7 +4,7 @@ before go throught the docs, please have a brief look [here](/current-action-sum
 
 [Introduction to Oniro](/introduction-to-oniro/introduction-to-oniro.md)
 
-[Operating System Architecture](/operating-system-architecture/operating-system-architecture.md)
+[Operating System Architecture](/introduction-to-oniro/oniro-architecture.md)
 
 [Application Development Guide](/application-development/index.md)  
 - Welcome/(Development Overview)

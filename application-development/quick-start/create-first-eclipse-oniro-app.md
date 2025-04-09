@@ -1,8 +1,8 @@
 ---
+layout: default
 title:  Environment Setup Guide
 parent: Quick Start
 nav_order: 2
-layout: default
 ---
 
 

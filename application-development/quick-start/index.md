@@ -1,6 +1,6 @@
 ---
 title: Quick Start
-parent: Application Development Overview
+parent: Application Development
 nav_order: 1
 layout: default
 has_children: true

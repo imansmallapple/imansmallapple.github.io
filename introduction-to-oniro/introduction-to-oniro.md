@@ -1,3 +1,9 @@
+---
+layout: default
+title: Introduction to Oniro
+parent: Eclipse Oniro Project
+---
+
 ## What is Oniro?  
 
 Oniro is an open-source, vendor-neutral Operating System (OS) managed by the Eclipse Foundation. It is built upon the foundational layers of OpenHarmony, an open-source project incubated and operated by the OpenAtom Foundation. OpenHarmony is known for its distributed OS features that cater to a wide range of smart devices, regardless of their size. Oniro extends OpenHarmony code base with add-ons for the European and Global markets, such as ReactNative support, Eclipse Theia based IDE, Servo web engine, and more that are coming.  

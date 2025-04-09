@@ -1,9 +1,8 @@
 ---
 layout: default
-title:  Environment Setup Guide
 parent: Quick Start
+title:  Environment Setup Guide
 nav_order: 2
-permalink: /application-development/quick-start/create-first-eclipse-oniro-app.md/
 ---
 
 

@@ -1,7 +1,15 @@
-**Content Table:**  
-[Before you begin](#)  
+---
+title:  Environment Setup Guide
+parent: Quick Start
+nav_order: 2
+layout: default
+---
 
-[Create an Eclipse Onrio app using OpenHarmony Template](#create-an-eclipse-onrio-app-using-openharmony-template)  
+
+**Content Table:**  
+[Before you begin](#before-you-begin)  
+
+[Create an Eclipse Onrio app using OpenHarmony Template](#create-an-eclipse-oniro-app-using-openharmony-template)  
 
 [Find project files](#find-project-files)    
 
@@ -59,7 +67,7 @@ In this tutorial, you will create your first Eclipse Oniro application with `Ope
 #### What you will build
 - An application with two pages that support mutual navigation.  
 
-## Create an Eclipse Onrio app using OpenHarmony Template 
+## Create an Eclipse Oniro app using OpenHarmony Template 
 To create a project in DevEco Studio:
 
 1. Double-click the DevEco Studio icon to begin.

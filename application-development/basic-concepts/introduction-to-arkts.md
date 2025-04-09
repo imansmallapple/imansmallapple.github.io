@@ -1,3 +1,11 @@
+---
+title: Introduction to ArkTS
+parent: Basic Concepts
+grand_parent: Application Development
+nav_order: 2
+layout: default
+---
+
 **Content Table:**
 [Introduction](#introduction)  
 

@@ -1,8 +1,9 @@
 ---
+layout: default
 title:  Environment Setup Guide
 parent: Quick Start
 nav_order: 1
-layout: default
+permalink: /application-development/quick-start/environment-setup-config.md/
 ---
 
 # Environment Setup Guide

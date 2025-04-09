@@ -2,7 +2,7 @@
 layout: default
 grand_parent: Application Development
 parent: Quick Start
-title:  Environment Setup Guide
+title:  Create Your First Eclipse Oniro Application
 nav_order: 2
 ---
 

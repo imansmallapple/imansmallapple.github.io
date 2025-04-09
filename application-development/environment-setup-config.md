@@ -1,3 +1,10 @@
+---
+title:  Environment Setup Guide
+parent: Quick Start
+nav_order: 1
+layout: default
+---
+
 # Environment Setup Guide
 
 Text from (https://github.com/frankplus/oh-app-development-docs/blob/master/Chapter_3/Dev%20Enviroment%20Setup%20Guide.md)  

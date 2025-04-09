@@ -3,6 +3,7 @@ title: Quick Start
 parent: Application Development Overview
 nav_order: 1
 layout: default
+has_children: true
 ---
 
 [Environment Setup and Configuration](/application-development/environment-setup-config.md)  

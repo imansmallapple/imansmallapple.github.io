@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Application Development Overview
+title: Application Development
 nav_order: 2
 has_children: true
 ---

@@ -42,7 +42,7 @@ ArkTS is optimized to provide better performance and efficiency, while still mai
 [Text Source](https://gitee.com/openharmony/docs/blob/master/en/application-dev/quick-start/arkts-basic-syntax-overview.md)
 With a basic understanding of the ArkTS language, let's look into the composition of ArkTS through an example. As shown below, when the user clicks the button, the text content changes from Hello World to Hello ArkUI.  
 
-  **Figure 1** Example effect drawing 
+**Figure 1** Example effect drawing  
     <img src='./images/image-basic/v1.gif'>
 
 In this example, the basic composition of ArkTS is as follows.
@@ -1599,10 +1599,11 @@ struct ArticleSkeletonView {
 
 The figure below shows the effect.
 
-**Figure 5** Skeleton screen
+**Figure 4** Skeleton screen
 
-![ForEach-SkeletonScreen](figures/ForEach-SkeletonScreen.png)
-
+<div style="text-align:center">
+    <img src='./images/image-basic/image32.png' width='50%'>
+</div>
 In this example, the data item **item** is used as the key generation rule. Because the array items of the data source **simpleList** are different, the uniqueness of the keys can be ensured.
 
 ##### Data Source Changed
@@ -1706,9 +1707,11 @@ struct ArticleCard {
 
 The following figure shows the initial screen (on the left) and the screen after a pull-to-refresh gesture (on the right).
 
-**Figure 6** When the data source is changed
+**Figure 5** When the data source is changed
 
-![ForEach-DataSourceArrayChange](figures/ForEach-DataSourceArrayChange.png)
+<div style="text-align:center">
+    <img src='./images/image-basic/image33.png' width='50%'>
+</div>
 
 In this example, the **ArticleCard** component functions as a child component of the **ArticleListView** component and receives an **Article** object through the @Prop decorator to render article widgets.
 
@@ -1818,9 +1821,11 @@ struct ArticleCard {
 
 The following figure shows the initial screen (on the left) and the screen after the Like icon of Article 1 is clicked (on the right).
 
-**Figure 7** When properties of data source array items are changed
+**Figure 6** When properties of data source array items are changed
 
-![ForEach-DataSourceArraySubpropertyChange](figures/ForEach-DataSourceArraySubpropertyChange.png)
+<div style="text-align:center">
+    <img src='./images/image-basic/image34.png' width='50%'>
+</div>
 
 In this example, the **Article** class is decorated by the @Observed decorator. The parent component **ArticleListView** passes an **Article** object instance to the child component **ArticleCard**, and the child component uses the @ObjectLink decorator to receive the instance.
 

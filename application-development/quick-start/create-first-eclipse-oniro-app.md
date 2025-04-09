@@ -521,7 +521,7 @@ You can open your `Command prompt` and type `hdc` to check.
 
 4. You can observe the application running on the board.
 <div style="text-align:center">
-    <img src='./images/image-firstapp/image38.png'>
+    <img src='./images/image-firstapp/image38.png' width="50%">
 </div> 
 
 You learned about DevEco Studio and built your first Eclipse Oniro Application, congratulations!

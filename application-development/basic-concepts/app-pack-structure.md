@@ -1,3 +1,11 @@
+---
+title: Application Package Structure in Stage Model
+parent: Basic Concepts
+grand_parent: Application Development
+nav_order: 1
+layout: default
+---
+
 # Application Package Structure in Stage Model  
 
 >Text referenced from [source](https://gitee.com/openharmony/docs/blob/master/en/application-dev/quick-start/application-configuration-file-overview-stage.md)

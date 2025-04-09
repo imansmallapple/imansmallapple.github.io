@@ -246,14 +246,14 @@ Some examples of library：
 
 ## Installation Failure After Project Creation
 
-![alt text](../Images/Application-Development-Guide/environment_setup/SDK-7.png)  
+![alt text](./images/image-env/SDK-7.png)  
 There are a bunch of solutions on the forum but I simply tried switching the intranet to Internet.
 
 ## Cannot find the emulator of a phone device
 
 entry\>src\>main\>module.json5 is the configuration file for the module, check deviceType, add 'phone' if the it is missing.
 
-![alt text](../Images/Application-Development-Guide/environment_setup/SDK-11.png)  
+![alt text](./images/image-env/SDK-11.png)  
 
 
 ## Unable to find BMS Service when running on Emulator
@@ -272,7 +272,7 @@ Change USB Power Management Settings
 4. Uncheck *Power Management* and click *OK*.
 <div>
     <figure >
-        <img src="../Images/Application-Development-Guide/environment_setup/SDK-12.png"  width="260"/><img src="../Images/Application-Development-Guide/environment_setup/SDK-13.png"  width="260"/>
+        <img src="./images/image-env/SDK-12.png"  width="260"/><img src="./images/image-env/SDK-13.png"  width="260"/>
     </figure>
 </div>
 
@@ -284,14 +284,14 @@ Solution:
 Step 1: Modify build\_profile.json5 under entry and set apiType to faMode.  
 Step 2: Modify build\_profile.json5 under the project, change the compiled version to a lower version.  
 Run again, and the problem will be resolved.  
-   <img title="" src="../Images/Application-Development-Guide/environment_setup/SDK-14.png" alt="" width="294">
+   <img title="" src="./images/image-env/SDK-14.png" alt="" width="294">
 
 ## Install Failed
 
 Have the device connected and detected by IDE, click on “run”, the IDE gives the error messages:   
 "Install Failed : failed to install bundle. code: 9568289, error: install failed due to grant request permissions failed."  
 
-<img title="" src="../Images/Application-Development-Guide/environment_setup/SDK-15.png" alt="" width="467">
+<img title="" src="./images/image-env/SDK-15.png" alt="" width="467">
 
 It should be a permission issue, and now we need to identify the permissions causing the problem.   
 
@@ -303,5 +303,5 @@ If the permission level is set to "availableLevel": "system\_basic", then you ne
 
 set the"profile" with p7b file generated from java \-c commands in build-profile.json5  
 
-<img title="" src="../Images/Application-Development-Guide/environment_setup/SDK-16.png" >
+<img title="" src="./images/image-env/SDK-16.png" >
 

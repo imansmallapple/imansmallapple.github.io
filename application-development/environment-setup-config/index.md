@@ -46,7 +46,7 @@ We are using **DevEco Studio** as the IDE
 ## Get Package
 You can install **DevEco Studio** from [here](https://contentcenter-vali-drcn.dbankcdn.cn/pvt_2/DeveloperAlliance_package_901_9/ee/v3/HqJ-6O2FQny86xtk_dg9HQ/devecostudio-windows-4.1.0.400.zip?HW-CC-KV=V1&HW-CC-Date=20240409T033730Z&HW-CC-Expire=315360000&HW-CC-Sign=BFA444BC43A041331E695AE2CFA9035A957AF107E06C97E793FD3D31D7096A0D) (Current download version is DevEco Studio 4.1) or you can visit the OpenHarmony [release notes](https://docs.openharmony.cn/pages/v4.1/zh-cn/release-notes/OpenHarmony-v4.1-release.md)  
 If the **EN** version not available, try translating the page to English
-![alt text](./images/image-env/image1.png)
+![alt text](./images/image1.png)
 
 
 [Windows(64-bit)](https://contentcenter-vali-drcn.dbankcdn.cn/pvt_2/DeveloperAlliance_package_901_9/ee/v3/HqJ-6O2FQny86xtk_dg9HQ/devecostudio-windows-4.1.0.400.zip?HW-CC-KV=V1&HW-CC-Date=20240409T033730Z&HW-CC-Expire=315360000&HW-CC-Sign=BFA444BC43A041331E695AE2CFA9035A957AF107E06C97E793FD3D31D7096A0D)
@@ -66,43 +66,43 @@ After the download completes, extract the downloaded package and run `deveco-stu
 
 Keep clicking `next` until **Choose Install Location** procedure. 
 Specify desired installtion path by clicking `Browse...` if necessary and click `next`.
-<img src='./images/image-env/image3.png'>  
+<img src='./images/image3.png'>  
 
 >**Note:**
 Ensure that you delete all files from the previous installation path before proceeding if it's not your first installation.
-<img src='./images/image-env/image2.png'>  
+<img src='./images/image2.png'>  
 
 In **Installation Options** procedure, select `Create Desktop Shortcut`
-<img src='./images/image-env/image4.png'>  
+<img src='./images/image4.png'>  
 
 In **Choose Start Menu Folder** procedure, keep default settings and click `install`.
-<img src='./images/image-env/image5.png'>  
+<img src='./images/image5.png'>  
 
 The installation is finished.
-<img src='./images/image-env/image6.png'>  
+<img src='./images/image6.png'>  
 
 # Environment Configuration  
 Run `DevEco Studio` for the first time, configuation setting pages will appear.  
-<img src='./images/image-env/image7.png'>  
+<img src='./images/image7.png'>  
 
 Select `Do not import settings`
-<img src='./images/image-env/image8.png'>  
+<img src='./images/image8.png'>  
 
 On `Basic Setup` page, select install for **Node.js** and **Ohpm**.
-<img src='./images/image-env/image9.png'>  
+<img src='./images/image9.png'>  
 Click **Next** to proceed to the SDK configuration page, and then set the SDK path to an appropriate location.
-<img src='./images/image-env/image10.png'>  
+<img src='./images/image10.png'>  
 Accept the License Agreement
-<img src='./images/image-env/image11.png'>  
+<img src='./images/image11.png'>  
 Check the summary information and go next
-<img src='./images/image-env/image12.png'>  
-<img src='./images/image-env/image13.png'>  
+<img src='./images/image12.png'>  
+<img src='./images/image13.png'>  
 Environment configuration is finished.
-<img src='./images/image-env/image14.png'>  
+<img src='./images/image14.png'>  
 >**Note:**
 If you want to run application for OpenHarmony, you need to install revelent APIs as well. You can download public SDK from `DevEco Studio`->`Tool`->`SDK Manager`->`OpenHarmony`, select API and click `Apply` to download.
 (If you downloaded DevEco Studio version is 4.1, choose API Version 11 for development.)
-<img src='./images/image-env/image18.png'>  
+<img src='./images/image18.png'>  
 
 
 
@@ -124,7 +124,7 @@ There are two types of SDKs:
    Use conditional filtering, such as selecting the project as openharmony, selecting the target branch OpenHarmony-4.1-Release, selecting a date from the previous month, or manually choosing a range.  
    
    In the daily build or rolling build, find **ohos-sdk-full_4.1-Release**, and click on the download link to choose and download the full package, which includes Full-SDK for Windows and Linux.  (If daily build SDK is not compatible with your version of DevEco Studio, try to use rolling build SDK instead)  
-<img src='./images/image-env/image19.png'>  
+<img src='./images/image19.png'>  
  
 
 | pipeline        | description                                                                                          | remark                                                                                                           |
@@ -144,7 +144,7 @@ Take the replacement of the full SDK of DevEco Studio 4.1, API 11 on Windows OS 
 
 1. Backup and remove the local SDK:  
    Make sure to select OpenHarmony then navigate to the directory where the original SDK is installed.
-<img src='./images/image-env/image20.png'>  
+<img src='./images/image20.png'>  
 
 
 
@@ -191,11 +191,11 @@ You can see that it contains SDK files for both Linux and Windows platforms. Eac
                    toolchains-windows-x64-4.1.7.8-Release
 ```
 2. Create a new directory with the API version 11  as the file name in dir path: xxx\\Sdk\\ , unzip the compressed files  into this directory to form a structure below:
-<img src='./images/image-env/image21.png'>  
+<img src='./images/image21.png'>  
 
 3. Verify in the IDE:  
    Full API will be loaded in IDE and you can now rebuild the project.  
-<img src='./images/image-env/image24.png'>  
+<img src='./images/image24.png'>  
 Full SDK replacement tutorial finished.
 
 ### **Approach 2: From Compiled Source Files**
@@ -245,14 +245,14 @@ Some examples of library：
 
 ## Installation Failure After Project Creation
 
-![alt text](./images/image-env/SDK-7.png)  
+![alt text](./images/SDK-7.png)  
 There are a bunch of solutions on the forum but I simply tried switching the intranet to Internet.
 
 ## Cannot find the emulator of a phone device
 
 entry\>src\>main\>module.json5 is the configuration file for the module, check deviceType, add 'phone' if the it is missing.
 
-![alt text](./images/image-env/SDK-11.png)  
+![alt text](./images/SDK-11.png)  
 
 
 ## Unable to find BMS Service when running on Emulator
@@ -271,7 +271,7 @@ Change USB Power Management Settings
 4. Uncheck *Power Management* and click *OK*.
 <div>
     <figure >
-        <img src="./images/image-env/SDK-12.png"  width="260"/><img src="./images/image-env/SDK-13.png"  width="260"/>
+        <img src="./images/SDK-12.png"  width="260"/><img src="./images/SDK-13.png"  width="260"/>
     </figure>
 </div>
 
@@ -283,14 +283,14 @@ Solution:
 Step 1: Modify build\_profile.json5 under entry and set apiType to faMode.  
 Step 2: Modify build\_profile.json5 under the project, change the compiled version to a lower version.  
 Run again, and the problem will be resolved.  
-   <img title="" src="./images/image-env/SDK-14.png" alt="" width="294">
+   <img title="" src="./images/SDK-14.png" alt="" width="294">
 
 ## Install Failed
 
 Have the device connected and detected by IDE, click on “run”, the IDE gives the error messages:   
 "Install Failed : failed to install bundle. code: 9568289, error: install failed due to grant request permissions failed."  
 
-<img title="" src="./images/image-env/SDK-15.png" alt="" width="467">
+<img title="" src="./images/SDK-15.png" alt="" width="467">
 
 It should be a permission issue, and now we need to identify the permissions causing the problem.   
 
@@ -302,5 +302,5 @@ If the permission level is set to "availableLevel": "system\_basic", then you ne
 
 set the"profile" with p7b file generated from java \-c commands in build-profile.json5  
 
-<img title="" src="./images/image-env/SDK-16.png" >
+<img title="" src="./images/SDK-16.png" >
 

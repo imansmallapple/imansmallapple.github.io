@@ -72,24 +72,24 @@ To create a project in DevEco Studio:
 
 1. Double-click the DevEco Studio icon to begin.
 <div style="text-align:center">
-    <img src='./images/image-firstapp/image1.png' width='30%'>
+    <img src='./images/image1.png' width='30%'>
 </div>
 
 2. In welcome page click `Create Project`.
 <div style="text-align:center">
-    <img src='./images/image-firstapp/image2.png'>
+    <img src='./images/image2.png'>
 </div>
 
 The **Create Project** window opens with template market provided by DevEco Studio.
 <div style="text-align:center">
-    <img src='./images/image-firstapp/image3.png'>
+    <img src='./images/image3.png'>
 </div>
 
 In DevEco Studio, a project template serves as a blueprint for building specific types of apps. It defines the project structure and essential files, providing starter code to help you get started quickly.
 
 3. Make sure the `Application` tab is selected on the left bar, then choose `[OpenHarmony]Empty Ability` as project template and click `Next`.
 <div style="text-align:center">
-    <img src='./images/image-firstapp/image4.png'>
+    <img src='./images/image4.png'>
 </div>
 
 4. Configure your project with following information:  
@@ -108,19 +108,19 @@ In DevEco Studio, a project template serves as a blueprint for building specific
  If you plan to use **JavaScript**, select **API 8** instead. This will provide a language option where you can choose **JS**.
 
 <div style="text-align:center">
-    <img src='./images/image-firstapp/image5.png'>
+    <img src='./images/image5.png'>
 </div>  
 
 5. Click `Finish` and wait for the project creation.
 
 <div style="text-align:center">
-    <img src='./images/image-firstapp/image6.png'>
+    <img src='./images/image6.png'>
 </div> 
 
 6. Click **Previewer** on the right sidebar of DevEco Studio to view both the code and design simultaneously.
 
 <div style="text-align:center">
-    <img src='./images/image-firstapp/image7.png'>
+    <img src='./images/image7.png'>
 </div> 
 
 - **Project View**(Part 1): Displays all files and folders in your project.  
@@ -132,25 +132,25 @@ In DevEco Studio, a project template serves as a blueprint for building specific
 
 1. In DevEco Studio, take a look at the **Project** tab. The **Project** tab shows the actual file directory structure of the project as well as all project items and their dependencies (including SDKs and libraries)  
 <div style="text-align:center">
-    <img src='./images/image-firstapp/image8.png'>
+    <img src='./images/image8.png'>
 </div> 
 <br>
 
 2. Select **Project Files** from the drop-down menu. You can browse all the files in the project content root directory, but does not display external libraries and frameworks.
 <div style="text-align:center">
-    <img src='./images/image-firstapp/image9.png'>
+    <img src='./images/image9.png'>
 </div> 
 <br>
 
 3. If necessary, select **Open Files** to quickly jump between recently viewed files.
 <div style="text-align:center">
-    <img src='./images/image-firstapp/image10.png'>
+    <img src='./images/image10.png'>
 </div> 
 <br>
 
 4. Select **Ohos** from the drop-down menu. This optimized view clearly presents essential files required for development, making it easier for developers to quickly locate core code and resources related to application development.
 <div style="text-align:center">
-    <img src='./images/image-firstapp/image11.png'>
+    <img src='./images/image11.png'>
 </div> 
 <br>
 
@@ -163,7 +163,7 @@ During UI code development, if you add or remove UI components, simply save your
 >**Note**:
 For .ets file, Previewer only works with components which decorated with **@Entry** or **@Preview** decorator.
 <div style="text-align:center">
-    <img src='./images/image-firstapp/image12.png'>
+    <img src='./images/image12.png'>
 </div> 
 <br>
 
@@ -171,30 +171,30 @@ DevEco Studio's **Previewer** offers several essential features to enhance the U
 
 - **Screen Rotation**: You can switch between portrait and landscape orientations by clicking the **Orientation** button within the Previewer. 
 <div style="text-align:center">
-    <img src='./images/image-firstapp/image13.png'>
+    <img src='./images/image13.png'>
 </div> 
 <br>
 
 - **Device Switching**: The Previewer allows you to switch between different device profiles to see how your application appears on various devices. 
 <div style="text-align:center">
-    <img src='./images/image-firstapp/image14.png'>
-    <img src='./images/image-firstapp/image15.png'>
-    <img src='./images/image-firstapp/image16.png'>
+    <img src='./images/image14.png'>
+    <img src='./images/image15.png'>
+    <img src='./images/image16.png'>
 </div> 
 <br>
 
 
 - **Multi-Device Preview**: By enabling the multi-device preview feature, you can simultaneously view your application's UI across multiple devices.
 <div style="text-align:center">
-    <img src='./images/image-firstapp/image17.png'>
-    <img src='./images/image-firstapp/image18.png'>
+    <img src='./images/image17.png'>
+    <img src='./images/image18.png'>
 </div> 
 <br>
 
 - **Code Inspection**: ​DevEco Studio's **Inspector** feature enables bidirectional interaction between the `code editor`, `UI preview`, and `component tree`.  
 <div style="text-align:center">
-    <img src='./images/image-firstapp/image19.png'>
-    <img src='./images/image-firstapp/image20.png'>
+    <img src='./images/image19.png'>
+    <img src='./images/image20.png'>
 </div> 
 <br>
 
@@ -263,19 +263,19 @@ struct Index {
 ```
 Now you can observe how the first page looks like in the `Previewer`
 <div style="text-align:center">
-    <img src='./images/image-firstapp/image21.png'>
+    <img src='./images/image21.png'>
 </div> 
 
 ## Build the Second Page  
 ### Create the Second Page
 1. Right click `entry > ets > pages` folder, select `New` and choose `Page`.
 <div style="text-align:center">
-    <img src='./images/image-firstapp/image22.png'>
+    <img src='./images/image22.png'>
 </div> 
 
 2. Type 'SecondPage' as the new Page name. 
 <div style="text-align:center">
-    <img src='./images/image-firstapp/image23.png'>
+    <img src='./images/image23.png'>
 </div> 
 
 SecondPage created.
@@ -329,7 +329,7 @@ struct SecondPage {
 ```
 You can observe how the second page looks like in the `Previewer`
 <div style="text-align:center">
-    <img src='./images/image-firstapp/image24.png'>
+    <img src='./images/image24.png'>
 </div> 
 
 ## Implementing Page Redirection
@@ -389,7 +389,7 @@ struct Index {
 ```
 Click the `Next` button now and page will redirect to the `SecondPage`. You can also observe the printed information in console as well.
 <div style="text-align:center">
-    <img src='./images/image-firstapp/image25.png'>
+    <img src='./images/image25.png'>
 </div> 
 
 ### Redirection from the second page to the first page
@@ -445,8 +445,8 @@ struct SecondPage {
 ```
 Click the `Back` button on the page or the triangle icon on the Previewer, the page will redirect back to the `Index`. You can also observe the printed information in console as well.
 <div style="text-align:center">
-    <img src='./images/image-firstapp/image26.png'>
-    <img src='./images/image-firstapp/image27.png'>
+    <img src='./images/image26.png'>
+    <img src='./images/image27.png'>
 </div> 
 
 ## Running the Application on a Real Device
@@ -463,64 +463,64 @@ In the daily build or rolling build, find **ohos-sdk-full_4.1-Release**, and cli
 
 2. Under `toolchain` folder, find `hdc.exe` and `libusb_shared.ddl`.
 <div style="text-align:center">
-    <img src='./images/image-firstapp/image29.png'>
+    <img src='./images/image29.png'>
 </div> 
 
 3. Create a folder called `hdc_bin`, you can create it wherever you like and put `hdc.exe` and `libusb_shared` into that folder.
 <div style="text-align:center">
-    <img src='./images/image-firstapp/image30.png'>
+    <img src='./images/image30.png'>
 </div> 
 
 4. Add **Environment Variable**
 - Open `Settings` on Windows system, type `environment` to search `Edit the system environment variables` and click it.
 <div style="text-align:center">
-    <img src='./images/image-firstapp/image31.png'>
+    <img src='./images/image31.png'>
 </div> 
 
 - Make sure the `System Properties` window is under `Advanced` tab, click `Environment Variables...`
 <div style="text-align:center">
-    <img src='./images/image-firstapp/image32.png'>
+    <img src='./images/image32.png'>
 </div> 
 
 - Double click `Path` in `System variables` area. Click `New` on new pop-up window and paste your `hdc_bin` folder path.  
 After that, click `OK` for all windows. 
 <div style="text-align:center">
-    <img src='./images/image-firstapp/image33.png'>
+    <img src='./images/image33.png'>
 </div> 
 
 - Check whether the HDC is running properly
 You can open your `Command prompt` and type `hdc` to check.
 <div style="text-align:center">
-    <img src='./images/image-firstapp/image34.png'>
+    <img src='./images/image34.png'>
 </div> 
 
 ### Use real machine to run application with USB  
 1. Connect the development board(Here I used `HiHope HH-SCDAYU200 Development Kit`) running the OpenHarmony standard system to the computer and you can find the running device on the top part of the IDE.
 <div style="text-align:center">
-    <img src='./images/image-firstapp/image36.png'>
+    <img src='./images/image36.png'>
 </div> 
 
 2. Generate signature. 
 - Click `Project Structure...` icon on the top-right corner of the IDE, Choose `Project > Signing Configs` and select `Automatically generate signature`. 
 - Click `Apply` and wait until the automatic signing is complete.
 <div style="text-align:center">
-    <img src='./images/image-firstapp/image28.png'>
+    <img src='./images/image28.png'>
 </div> 
 
 - You can find signed signature in `configuration` folder and open `build-profile.json5` file.
 
 <div style="text-align:center">
-    <img src='./images/image-firstapp/image35.png'>
+    <img src='./images/image35.png'>
 </div> 
 
 3. Click `Run 'entry'` triangle button.
 <div style="text-align:center">
-    <img src='./images/image-firstapp/image37.png'>
+    <img src='./images/image37.png'>
 </div> 
 
 4. You can observe the application running on the board.
 <div style="text-align:center">
-    <img src='./images/image-firstapp/image38.png' width="50%">
+    <img src='./images/image38.png' width="50%">
 </div> 
 
 You learned about DevEco Studio and built your first Eclipse Oniro Application, congratulations!

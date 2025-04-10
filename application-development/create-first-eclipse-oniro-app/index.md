@@ -8,9 +8,9 @@ has_children: true
 
 ## Before you begin  
 
-Make sure you have gone through the [environment setup guide](../environment-setup-config/index.md).  
+Make sure you have gone through the [environment setup guide](/application-development/environment-setup-config/).  
 
-
+<!--  -->
 In this tutorial, you will create your first Eclipse Oniro application with `OpenHarmony` template provided by `DevEco Studio`. 
 
 #### Prerequisites

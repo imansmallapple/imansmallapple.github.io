@@ -497,20 +497,20 @@ struct ParentComponent {
 ##### Basic Structure of a Custom Component
 Basic structure are listed below:
 - **struct**
-The definition of a custom component must start with the \@Component struct followed by the component name, and then component body enclosed by curly brackets. No inheritance is allowed. You can omit the **new** operator when instantiating a struct.
+The definition of a custom component must start with the @Component struct followed by the component name, and then component body enclosed by curly brackets. No inheritance is allowed. You can omit the **new** operator when instantiating a struct.
 
   > **NOTE**
   >
   > The name or its class or function name of a custom component must be different from that of any built-in components.
 
 - **@Component**
-The \@Component decorator can decorate only the structs declared by the **struct** keyword. When being decorated by \@Component, a struct has the componentization capability. You must implement the **build** function for it to describe the UI. Each struct can be decorated by only one \@Component. \@Component can accept an optional parameter of the Boolean type.
+The @Component decorator can decorate only the structs declared by the **struct** keyword. When being decorated by @Component, a struct has the componentization capability. You must implement the **build** function for it to describe the UI. Each struct can be decorated by only one @Component. @Component can accept an optional parameter of the Boolean type.
 
   > **NOTE**
   >
   > This decorator can be used in ArkTS widgets since API version 9.
   > 
-  > An optional parameter of the Boolean type can be used in the \@Component since API version 11.
+  > An optional parameter of the Boolean type can be used in the @Component since API version 11.
 
   ```ts
   @Component
@@ -529,13 +529,13 @@ The **build** function is used to define the declarative UI description of a cus
   ```
 
 - **@Entry**
-A custom component decorated with \@Entry is used as the default entry component of the page. Only one component can be decorated with \@Entry in a single page. The \@Entry decorator accepts an optional parameter of type **LocalStorage**.
+A custom component decorated with @Entry is used as the default entry component of the page. Only one component can be decorated with @Entry in a single page. The @Entry decorator accepts an optional parameter of type **LocalStorage**.
 
   > **NOTE**
   >
   > This decorator can be used in ArkTS widgets since API version 9.
   >
-  > Since API version 10, the \@Entry decorator accepts an optional parameter of type **LocalStorage** or type **EntryOptions**.
+  > Since API version 10, the @Entry decorator accepts an optional parameter of type **LocalStorage** or type **EntryOptions**.
   >
   > This decorator can be used in atomic services since API version 11.
 
@@ -547,7 +547,7 @@ A custom component decorated with \@Entry is used as the default entry component
   ```
 
 - **@Reusable**
-Custom components decorated by \@Reusable can be reused.
+Custom components decorated by @Reusable can be reused.
 
   > **NOTE**
   >
@@ -632,7 +632,7 @@ Click the button defined in `Son`, `Text` result will be updated in `Parent`.
 
 ##### Rules in build Function
 Whatever declared in build() are called UI descriptions. UI descriptions must comply with the following rules:
-- For an \@Entry decorated custom component, exactly one root component is required under **build()**. This root component must be a container component. **ForEach** is not allowed at the top level. For an \@Component decorated custom component, exactly one root component is required under **build()**. This root component is not necessarily a container component. **ForEach** is not allowed at the top level.
+- For an @Entry decorated custom component, exactly one root component is required under **build()**. This root component must be a container component. **ForEach** is not allowed at the top level. For an @Component decorated custom component, exactly one root component is required under **build()**. This root component is not necessarily a container component. **ForEach** is not allowed at the top level.
   ```ts
   @Entry
   @Component
@@ -683,7 +683,7 @@ Whatever declared in build() are called UI descriptions. UI descriptions must co
   }
   ```
 
-- Only methods decorated by \@Builder can be called. The parameters of built-in components can be the return values of TS methods.
+- Only methods decorated by @Builder can be called. The parameters of built-in components can be the return values of TS methods.
 
   ```ts
   @Component
@@ -789,7 +789,7 @@ In ArkUI state management, UI re-render is driven by state.
 <div style="text-align:center">
     <img src='./images/image-basic/image11.png' width=40%>
 </div> 
- Therefore, do not change any state variable in the **build()** or \@Builder decorated method of a custom component. Otherwise, loop rendering may result.
+ Therefore, do not change any state variable in the **build()** or @Builder decorated method of a custom component. Otherwise, loop rendering may result.
 
 ##### Universal Style of a Custom Component
 The universal style of a custom component is configured by the chain call.
@@ -825,12 +825,12 @@ struct MyComponent {
 
 Before we dive into the page and custom component lifecycle, it would be helpful to learn the relationship between custom **components** and **pages**.
 
-- Custom component: \@Component decorated UI unit, which can combine multiple built-in components for component reusability and invoke component lifecycle callbacks.
+- Custom component: @Component decorated UI unit, which can combine multiple built-in components for component reusability and invoke component lifecycle callbacks.
 
-- Page: UI page of an application. A page can consist of one or more custom components. A custom component decorated with `@Entry` is used as the entry component of the page. Exactly one component is decorated with \@Entry in a single source file. Only components decorated by \@Entry can invoke the lifecycle callbacks of a page.
+- Page: UI page of an application. A page can consist of one or more custom components. A custom component decorated with `@Entry` is used as the entry component of the page. Exactly one component is decorated with @Entry in a single source file. Only components decorated by @Entry can invoke the lifecycle callbacks of a page.
 
 
-The following lifecycle callbacks are provided for a page, that is, a custom component decorated with \@Entry:
+The following lifecycle callbacks are provided for a page, that is, a custom component decorated with @Entry:
 
 
 - **onPageShow**: Invoked each time the page is displayed, for example, during page redirection or when the application is switched to the foreground.
@@ -840,7 +840,7 @@ The following lifecycle callbacks are provided for a page, that is, a custom com
 - **onBackPress**: Invoked when the user clicks the **Back** button.
 
 
-The following lifecycle callbacks are provided for a custom component decorated with \@Component:
+The following lifecycle callbacks are provided for a custom component decorated with @Component:
 
 
 - **aboutToAppear**: Invoked when the custom component is about to appear. Specifically, it is invoked after a new instance of the custom component is created and before its **build** function is executed.
@@ -848,7 +848,7 @@ The following lifecycle callbacks are provided for a custom component decorated 
 - **aboutToDisappear**: Invoked when the custom component is about to be destroyed. Do not change state variables in the **aboutToDisappear** function as doing this can cause unexpected errors. For example, the modification of the **@Link** decorated variable may cause unstable application running.
 
 
-The following figure shows the lifecycle of a component (page) decorated with \@Entry.
+The following figure shows the lifecycle of a component (page) decorated with @Entry.
 
 
 <div style="text-align:center">
@@ -976,7 +976,7 @@ struct page {
 }
 ```
 
-In the preceding example, the **Index** page contains two custom components. One is **MyComponent** decorated with \@Entry, which is also the entry component (root node) of the page. The other is **Child**, which is a child component of **MyComponent**. Only components decorated by \@Entry can call the page lifecycle callbacks. Therefore, the lifecycle callbacks of the **Index** page – **onPageShow**, **onPageHide**, and **onBackPress**, are declared in **MyComponent**. In **MyComponent** and its child components, component lifecycle callbacks – **aboutToAppear** and **aboutToDisappear** –  are also declared.
+In the preceding example, the **Index** page contains two custom components. One is **MyComponent** decorated with @Entry, which is also the entry component (root node) of the page. The other is **Child**, which is a child component of **MyComponent**. Only components decorated by @Entry can call the page lifecycle callbacks. Therefore, the lifecycle callbacks of the **Index** page – **onPageShow**, **onPageHide**, and **onBackPress**, are declared in **MyComponent**. In **MyComponent** and its child components, component lifecycle callbacks – **aboutToAppear** and **aboutToDisappear** –  are also declared.
 
 
 - The initialization process of application cold start is as follows: MyComponent aboutToAppear -> MyComponent build -> Child aboutToAppear -> Child build -> Child build execution completed -> MyComponent build execution completed -> Index onPageShow
@@ -1020,7 +1020,7 @@ For custom components, any variable that affects the UI must be decorated. Witho
 </div>
 
 
-- **View (UI)**: UI rendering, which is visual representation of the UI description in the **build** method and \@Builder decorated method.
+- **View (UI)**: UI rendering, which is visual representation of the UI description in the **build** method and @Builder decorated method.
 
 - **State**: data that drives the UI to re-render. State data is changed by invoking the event method of the component. The change of the state data triggers the re-rendering of the UI.
 
@@ -1102,21 +1102,21 @@ In the preceding figure, the decorators in the components area are used for stat
 
 #### Decorators for component state management
 
-- **[\@State](/application-development/state-management-decorators.md/state-decorator.md)**: An \@State decorated variable holds the state of the owning component. It can be the source of one- or two-way synchronization with child components. When the variable changes, the dependent component will be updated. 
+- **[@State](/application-development/state-management-decorators.md/state-decorator.md)**: An @State decorated variable holds the state of the owning component. It can be the source of one- or two-way synchronization with child components. When the variable changes, the dependent component will be updated. 
 
-- **[\@Prop](/application-development/state-management-decorators.md/prop-decorator.md)**: An \@Prop decorated variable can create one-way synchronization with a variable of its parent component. \@Prop decorated variables are mutable, but changes are not synchronized to the parent component.
+- **[@Prop](/application-development/state-management-decorators.md/prop-decorator.md)**: An @Prop decorated variable can create one-way synchronization with a variable of its parent component. @Prop decorated variables are mutable, but changes are not synchronized to the parent component.
 
-- **[\@Link](/application-development/state-management-decorators.md/link-decorator.md)**: An \@Link decorated variable creates two-way synchronization with a variable of its parent component. When the @Link decorated variable has its value changed, its source is updated as well; when the source updates, the @Link decorated variable will do as well.
+- **[@Link](/application-development/state-management-decorators.md/link-decorator.md)**: An @Link decorated variable creates two-way synchronization with a variable of its parent component. When the @Link decorated variable has its value changed, its source is updated as well; when the source updates, the @Link decorated variable will do as well.
 
-- **[\@Provide/\@Consume](/application-development/state-management-decorators.md/provide-consume-decorator.md)**: Variables decorated by \@Provide/\@Consume are used for data synchronization across component levels. The components can be bound to the variables through aliases or attribute names. Data does not need to be passed through the named parameter mechanism.
+- **[@Provide/@Consume](/application-development/state-management-decorators.md/provide-consume-decorator.md)**: Variables decorated by @Provide/@Consume are used for data synchronization across component levels. The components can be bound to the variables through aliases or attribute names. Data does not need to be passed through the named parameter mechanism.
 
-- **[\@Observed](/application-development/state-management-decorators.md/observed-objectlink-decorator.md)**: \@Observed is a class decorator. You can use it to decorate the class that has multiple levels of nested objects or arrays to be observed. Note that \@Observed must be used with \@ObjectLink for two-way synchronization or with \@Prop for one-way synchronization.
+- **[@Observed](/application-development/state-management-decorators.md/observed-objectlink-decorator.md)**: @Observed is a class decorator. You can use it to decorate the class that has multiple levels of nested objects or arrays to be observed. Note that @Observed must be used with @ObjectLink for two-way synchronization or with @Prop for one-way synchronization.
 
-- **[\@ObjectLink](/application-development/state-management-decorators.md/observed-objectlink-decorator.md)**: An \@ObjectLink decorated variable is used with an \@Observed decorated class of the parent component for two-way data synchronization. It is applicable in scenarios involving multiple levels of nested objects or arrays in the class.
+- **[@ObjectLink](/application-development/state-management-decorators.md/observed-objectlink-decorator.md)**: An @ObjectLink decorated variable is used with an @Observed decorated class of the parent component for two-way data synchronization. It is applicable in scenarios involving multiple levels of nested objects or arrays in the class.
 
 > **NOTE**
 >
-> Only **\@Observed/\@ObjectLink** can be used to observe changes of nested attributes. Other decorators can be used to observe changes of attributes at the first layer only.
+> Only **@Observed/@ObjectLink** can be used to observe changes of nested attributes. Other decorators can be used to observe changes of attributes at the first layer only.
 
 #### Decorators for application state management
 
@@ -1130,7 +1130,7 @@ In the preceding figure, the decorators in the components area are used for stat
 
 ### Other State Management Features
 
-**[\@Watch](/application-development/state-management-decorators.md/watch-decorator.md)**: listens for the changes of state variables.
+**[@Watch](/application-development/state-management-decorators.md/watch-decorator.md)**: listens for the changes of state variables.
 
 
 **[$$operator](/application-development/state-management-decorators.md/operator.md)**: provides a TS variable by-reference to a built-in component so that the variable value and the internal state of that component are kept in sync.
@@ -1237,7 +1237,7 @@ Click `increase count`, 'count is positive' will appear on the Previewer.
 
 ##### if ... else ... and Child Component States
 
-This example involves **if...** **else...** and a child component with an \@State decorated variable.
+This example involves **if...** **else...** and a child component with an @State decorated variable.
 
 
 ```ts
@@ -1278,7 +1278,7 @@ struct MainView {
 }
 ```
 
-On first render, the **CounterView** (label: **'CounterView \#positive'**) child component is created. This child component carries the \@State decorated variable, named **counter**. When the **CounterView.counter** state variable is updated, the **CounterView** (label: **'CounterView \#positive'**) child component is re-rendered, with its state variable value preserved. When the value of the **MainView.toggle** state variable changes to **false**, the **if** statement inside the **MainView** parent component gets updated, and subsequently the **CounterView** (label: **'CounterView \#positive'**) child component is removed. At the same time, a new **CounterView** (label: **'CounterView \#negative'**) child component is created, with the **counter** state variable set to the initial value **0**.
+On first render, the **CounterView** (label: **'CounterView \#positive'**) child component is created. This child component carries the @State decorated variable, named **counter**. When the **CounterView.counter** state variable is updated, the **CounterView** (label: **'CounterView \#positive'**) child component is re-rendered, with its state variable value preserved. When the value of the **MainView.toggle** state variable changes to **false**, the **if** statement inside the **MainView** parent component gets updated, and subsequently the **CounterView** (label: **'CounterView \#positive'**) child component is removed. At the same time, a new **CounterView** (label: **'CounterView \#negative'**) child component is created, with the **counter** state variable set to the initial value **0**.
 
 Here is a preview of the example:
 <div style="text-align:center">
@@ -1330,7 +1330,7 @@ struct MainView {
 }
 ```
 
-Here, the \@State decorated variable **counter** is owned by the parent component. Therefore, it is not destroyed when a **CounterView** component instance is destroyed. The **CounterView** component refers to the state by an \@Link decorator. The state must be moved from a child to its parent (or parent of parent) to avoid losing it when the conditional content (or repeated content) is destroyed.
+Here, the @State decorated variable **counter** is owned by the parent component. Therefore, it is not destroyed when a **CounterView** component instance is destroyed. The **CounterView** component refers to the state by an @Link decorator. The state must be moved from a child to its parent (or parent of parent) to avoid losing it when the conditional content (or repeated content) is destroyed.
 
 ### ForEach: Rendering of Repeated Content
 

@@ -1,3 +1,10 @@
+---
+title: ArkTS Basics
+parent: Introduction to ArkTS
+nav_order: 1
+layout: default
+---
+
 ## The Basics
 > Text from [source](https://gitee.com/openharmony/docs/blob/master/en/application-dev/quick-start/introduction-to-arkts.md#the-basics) 
 

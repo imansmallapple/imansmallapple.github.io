@@ -459,7 +459,7 @@ You can skip this part if you followed the procedure from [Environment Setup and
 Use conditional filtering, such as selecting the project as openharmony, selecting the target branch OpenHarmony-4.1-Release, selecting a date from the previous month, or manually choosing a range.  
    
 In the daily build or rolling build, find **ohos-sdk-full_4.1-Release**, and click on the download link to choose and download the full package, which includes Full-SDK for Windows and Linux.  (If daily build SDK is not compatible with your version of DevEco Studio, try to use rolling build SDK instead)  
-<img src='./images/image-env/image19.png'>  
+<img src='./images/image39.png'>  
 
 2. Under `toolchain` folder, find `hdc.exe` and `libusb_shared.ddl`.
 <div style="text-align:center">

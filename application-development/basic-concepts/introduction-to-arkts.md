@@ -814,9 +814,8 @@ struct MyComponent {
   }
 }
 ```
-<div style="text-align:center">
-    <img src='./images/image-basic/image12.png' width=40%>
-</div> 
+
+<img src='./images/image-basic/image12.png' width=40%>
 
 > **NOTE**
 >
@@ -1048,7 +1047,8 @@ CompA: ({ aProp: this.aProp });
 ```
 
 - **Initialization from Parent Component**: A process where the parent component uses the named parameter mechanism to pass specified parameters to the child component. The default value used in local initialization will be overwritten by the value passed from the parent component. Example:
-```typescript
+
+```ts
 @Component
 struct MyComponent {
   @State count: number = 0;       // State variable

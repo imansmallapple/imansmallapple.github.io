@@ -1,5 +1,5 @@
 ---
-title: @State Decorator
+title: State Decorator
 parent: Introduction to ArkTS
 layout: default
 ---

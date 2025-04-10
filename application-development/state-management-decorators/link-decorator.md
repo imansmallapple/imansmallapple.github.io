@@ -1,5 +1,5 @@
 ---
-title: @Link Decorator
+title: Link Decorator
 parent: Introduction to ArkTS
 layout: default
 ---

@@ -4,6 +4,8 @@ theme: just-the-docs
 logo: "/Images/logo/ONIRO-Masterbrand-horizontal.png"
 color_scheme: oniro
 
+baseurl: ""
+
 # Makes Aux links open in a new tab. Default is false
 aux_links_new_tab: false
 

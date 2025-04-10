@@ -1,5 +1,5 @@
 ---
-title: Create an Eclipse Oniro app using OpenHarmony Template
+title: Running the Application on a Real Device
 parent: Create Your First Eclipse Oniro Application
 grand_parent: Application Development
 nav_order: 7

@@ -1,5 +1,5 @@
 ---
-title: Create an Eclipse Oniro app using OpenHarmony Template
+title: Build the Second Page
 parent: Create Your First Eclipse Oniro Application
 grand_parent: Application Development
 nav_order: 5

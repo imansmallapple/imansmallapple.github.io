@@ -1,9 +1,8 @@
 ---
-layout: default
-grand_parent: Application Development
-parent: Quick Start
-title:  Environment Setup Guide
+title: Environment Setup Guide
+parent: Application Development
 nav_order: 1
+layout: default
 ---
 
 # Environment Setup Guide

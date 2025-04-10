@@ -1,11 +1,10 @@
 ---
-layout: default
-grand_parent: Application Development
-parent: Quick Start
-title:  Create Your First Eclipse Oniro Application
+title: Create Your First Eclipse Oniro Application
+parent: Application Development
 nav_order: 2
+layout: default
+has_children: true
 ---
-
 
 **Content Table:**  
 [Before you begin](#before-you-begin)  

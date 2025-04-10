@@ -1,3 +1,9 @@
+---
+title: AppStorage
+parent: Introduction to ArkTS
+layout: default
+---
+
 # AppStorage
 
 AppStorage provides central storage for application UI state attributes. It is bound to the application process and is created by the UI framework at application startup.

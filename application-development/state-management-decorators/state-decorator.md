@@ -1,3 +1,9 @@
+---
+title: \@State Decorator
+parent: Introduction to ArkTS
+layout: default
+---
+
 # \@State Decorator
 
 Variables decorated with `@State`, also known as state variable, are used in our development to declare internal component states. When a property is decorated with `@State`, it becomes a reactive state of the component. This means that whenever the property's value changes, the component will automatically re-render to reflect the updated state.

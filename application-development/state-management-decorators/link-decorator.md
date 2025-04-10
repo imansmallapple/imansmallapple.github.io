@@ -1,6 +1,12 @@
-# \@Link Decorator
+---
+title: @Link Decorator
+parent: Introduction to ArkTS
+layout: default
+---
 
-An \@Link decorated variable creates two-way synchronization with a variable of its parent component.
+# @Link Decorator
+
+An @Link decorated variable creates two-way synchronization with a variable of its parent component.
 
 > **NOTE**
 >
@@ -8,8 +14,8 @@ An \@Link decorated variable creates two-way synchronization with a variable of 
 
 ## Feature and Constraint
 
-- An \@Link decorated variable in a child component shares the same value with a variable in its parent component.
-- The \@Link decorator cannot be used in custom components decorated by \@Entry.
+- An @Link decorated variable in a child component shares the same value with a variable in its parent component.
+- The @Link decorator cannot be used in custom components decorated by @Entry.
 
 ## Usage Scenarios
 ### Example for @Link with Simple and Class Types
@@ -108,9 +114,9 @@ struct ShufflingContainer {
     <img src='/application-development/image-basic/v6.gif'>
 </div>
 
-### Array Type \@Link
+### Array Type @Link
 
-The ArkUI framework can observe the addition, deletion, and replacement of array items. It should be noted that, in the following example, the type of the \@Link and \@State decorated variables is the same: number[]. It is not allowed to define the \@Link decorated variable in the child component as type number (**\@Link item: number**), and create child components for each array item in the \@State decorated array in the parent component.
+The ArkUI framework can observe the addition, deletion, and replacement of array items. It should be noted that, in the following example, the type of the @Link and @State decorated variables is the same: number[]. It is not allowed to define the @Link decorated variable in the child component as type number (**@Link item: number**), and create child components for each array item in the @State decorated array in the parent component.
 
 ```ts
 @Component

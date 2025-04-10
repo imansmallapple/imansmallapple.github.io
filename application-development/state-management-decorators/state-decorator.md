@@ -1,10 +1,10 @@
 ---
-title: \@State Decorator
+title: @State Decorator
 parent: Introduction to ArkTS
 layout: default
 ---
 
-# \@State Decorator
+# @State Decorator
 
 Variables decorated with `@State`, also known as state variable, are used in our development to declare internal component states. When a property is decorated with `@State`, it becomes a reactive state of the component. This means that whenever the property's value changes, the component will automatically re-render to reflect the updated state.
 
@@ -45,7 +45,7 @@ In the code above, we define a component named `MyComponent`, which contains a s
 
 ### Decorating the Class Object Type Variables
 
-- In this example, `\@State` is used to decorate the variables **count** and **title** in the custom component **MyComponent**. The type of **title** is **Model**, a custom class. If the value of **count** or **title** changes, the framework searches for all **MyComponent** instances that depend on these variables and triggers re-rendering of them.
+- In this example, `@State` is used to decorate the variables **count** and **title** in the custom component **MyComponent**. The type of **title** is **Model**, a custom class. If the value of **count** or **title** changes, the framework searches for all **MyComponent** instances that depend on these variables and triggers re-rendering of them.
 
 - The **EntryComponent** has multiple **MyComponent** instances. The internal state change of the first **MyComponent** instance does not affect the second **MyComponent** instance.
 

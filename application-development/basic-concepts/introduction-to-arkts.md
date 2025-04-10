@@ -30,7 +30,7 @@ has_children: true
   - [ForEach: Rendering of Repeated Content](#foreach-rendering-of-repeated-content)  
   - [LazyForEach: Lazy Data Loading](#lazyforeach-lazy-data-loading)  
 
-[ArkTS Basics](/application-development/arkts-basics.md)  
+[ArkTS Basics](/application-development/arkts-basics)  
 
 [Start Sample: Controlling Fan]()  
 

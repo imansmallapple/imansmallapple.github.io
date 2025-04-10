@@ -1,5 +1,5 @@
 ---
-title: Introduction to ArkTS
+title: UIAbility and Component
 parent: Basic Concepts
 grand_parent: Application Development
 nav_order: 4

@@ -1,3 +1,11 @@
+---
+layout: default
+title: Raspberry Pi 4 Model B Development Kit
+parent: Developer Boards supported by Eclipse Oniro
+grand_parent: Supported Devices
+nav_order: 1
+---
+
 # Raspberry Pi 4 Model B Development Kit
 Text from [here](https://github.com/eclipse-oniro4openharmony/eclipse-oniro4openharmony.github.io/blob/main/developer-boards/raspberry-pi-4model-b.md)  
 ## Introduction
@@ -46,7 +54,7 @@ The Oniro Project supports the Raspberry Pi 4B, and the following features have 
 
 ## Building
 
-After completing the steps in the [quick build documentation](../eclipse-oniro-project/building-oniro.html) to set up your build environment, proceed with the following steps to compile and build the system image for the Raspberry Pi 4B.
+After completing the steps in the [quick build documentation](../../quick-build-with-oniro) to set up your build environment, proceed with the following steps to compile and build the system image for the Raspberry Pi 4B.
 
 ### Step 1: Prepare the Build Environment
 

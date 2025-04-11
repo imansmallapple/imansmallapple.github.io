@@ -1,6 +1,14 @@
+---
+layout: default
+title: HiHope HH-SCDAYU200 Development Kit
+parent: Developer Boards supported by Eclipse Oniro
+grand_parent: Supported Devices
+nav_order: 1
+---
+
 # HiHope HH-SCDAYU200 Development Kit
 
-Text from (https://github.com/eclipse-oniro4openharmony/eclipse-oniro4openharmony.github.io/blob/main/developer-boards/hihope-hh-scdayu200.md)
+Text from [here](https://github.com/eclipse-oniro4openharmony/eclipse-oniro4openharmony.github.io/blob/main/developer-boards/hihope-hh-scdayu200.md)
 
 ## Introduction
 Based on the Rockchip RK3568, this development kit integrates advanced features
@@ -18,7 +26,7 @@ interface requirements.
 It is also equipped with dual Gigabit adaptive RJ45 Ethernet ports, which can
 meet the needs of NVR, industrial gateway and other multi-network port products.
 
-![HiHope HH-SCDAYU200 Development Kit](/Images/device-development/supported-device/hh-scdayu200.png)  
+![HiHope HH-SCDAYU200 Development Kit](../images/hh-scdayu200.png)  
 
 ## Specification
 
@@ -65,7 +73,7 @@ meet the needs of NVR, industrial gateway and other multi-network port products.
 
 ## Building
 
-To build Eclipse Oniro for this board the normal [quick build](../eclipse-oniro-project/building-oniro.html)
+To build Eclipse Oniro for this board the normal [quick build](../../quick-build-with-oniro)
 procedure has to be used to fetch the needed source code and environment.
 
 During the build step, inside the Docker instance, the target device for the

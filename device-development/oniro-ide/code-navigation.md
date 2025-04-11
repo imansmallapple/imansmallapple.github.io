@@ -15,7 +15,11 @@ The "Go to Definition" feature is a code navigation tool that allows you to quic
 This feature specifically deals with navigating to the type definition of a symbol. It is useful in statically-typed languages where you might want to see the type information associated with a variable or entity.
 
 ## Go to Symbol
-![Alt text](./images/go-to-symbol.png)  
+
+<div style="text-align:center">
+    <img src='./images/go-to-symbol.png'>
+</div>
+
 This allows you to quickly navigate to symbols (ie. variables, functions, classes..etc) within your file.
 
 ## Go to Implementations

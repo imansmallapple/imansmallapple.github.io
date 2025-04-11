@@ -11,7 +11,9 @@ nav_order: 5
 ## Rename Symbol
 This refactoring tool allows you to consistently rename symbols (variables, functions, methods, classes, etc.) throughout your codebase. This is particularly useful when you want to rename a symbol without manually updating each occurrence in different files.
 
-![Alt text](/Images/device-development/oniro-ide/rename-symbol.png)
+<div style="text-align:center">
+    <img src='./images/rename-symbol.png'>
+</div>
 
 Right click on a symbol you want to rename and choose `Rename Symbol` or press F2. Write the new name and press `Enter`, or press `Shift+Enter` to preview your changes in a separate pane before applying them.
 

@@ -1,3 +1,9 @@
+---
+title: PersistentStorage
+parent: Introduction to ArkTS
+layout: default
+---
+
 # PersistentStorage
 
 During application development, you may want selected attributes to persist even when the application is closed. In this case, you'll need PersistentStorage.

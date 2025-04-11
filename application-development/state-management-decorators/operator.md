@@ -1,3 +1,9 @@
+---
+title: $$ Syntax
+parent: Introduction to ArkTS
+layout: default
+---
+
 # $$ Syntax: Two-Way Synchronization of Built-in Components
 
 

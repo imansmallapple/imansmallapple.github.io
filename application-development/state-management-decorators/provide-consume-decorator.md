@@ -1,11 +1,17 @@
-# \@Provide and \@Consume Decorators
+---
+title: Provide and Consume Decorators
+parent: Introduction to ArkTS
+layout: default
+---
+
+# @Provide and @Consume Decorators
 
 
-\@Provide and \@Consume are used for two-way data synchronization with descendant components when state data needs to be transferred between multiple levels. They do not involve passing a variable from component to component multiple times.
+@Provide and @Consume are used for two-way data synchronization with descendant components when state data needs to be transferred between multiple levels. They do not involve passing a variable from component to component multiple times.
 
 
-- An \@Provide decorated state variable exists in the ancestor component and is said to be "provided" to descendent components. 
-- An \@Consume decorated state variable is used in a descendent component. It is linked to ("consumes") the provided state variable in its ancestor component.
+- An @Provide decorated state variable exists in the ancestor component and is said to be "provided" to descendent components. 
+- An @Consume decorated state variable is used in a descendent component. It is linked to ("consumes") the provided state variable in its ancestor component.
 
 
 > **NOTE**
@@ -15,11 +21,11 @@
 
 ## Features
 
-- An \@Provide decorated state variable becomes available to all descendent components of the providing component automatically. The variable is said to be "provided" to other components. This means that you do not need to pass a variable from component to component multiple times.
+- An @Provide decorated state variable becomes available to all descendent components of the providing component automatically. The variable is said to be "provided" to other components. This means that you do not need to pass a variable from component to component multiple times.
 
-- A descendent component gains access to the provided state variable by decorating a variable with \@Consume. This establishes a two-way data synchronization between the provided and the consumed variable. This synchronization works in the same manner as a combination of \@State and \@Link does. The only difference is that the former allows transfer across multiple levels of the UI parent-child hierarchy.
+- A descendent component gains access to the provided state variable by decorating a variable with @Consume. This establishes a two-way data synchronization between the provided and the consumed variable. This synchronization works in the same manner as a combination of @State and @Link does. The only difference is that the former allows transfer across multiple levels of the UI parent-child hierarchy.
 
-- \@Provide and \@Consume can be bound using the same variable name or variable alias. Whenever possible, use the same variable types to prevent implicit type conversion and consequently application behavior exceptions.
+- @Provide and @Consume can be bound using the same variable name or variable alias. Whenever possible, use the same variable types to prevent implicit type conversion and consequently application behavior exceptions.
 
 
 ```ts
@@ -33,11 +39,11 @@
 ```
 
 
-When \@Provide and \@Consume are bound through the same variable name or variable alias, the variables decorated by \@Provide and \@Consume are in a one-to-many relationship. A custom component, including its child components, should not contain multiple \@Provide decorated variables under the same name or alias. Otherwise, a runtime error will occur.
+When @Provide and @Consume are bound through the same variable name or variable alias, the variables decorated by @Provide and @Consume are in a one-to-many relationship. A custom component, including its child components, should not contain multiple @Provide decorated variables under the same name or alias. Otherwise, a runtime error will occur.
 
 ## Usage Scenarios
 
-The following example shows the two-way synchronization between \@Provide and \@Consume decorated variables. When the buttons in the **CompA** and **CompD** components are clicked, the changes to **reviewVotes** are synchronized to the **CompA** and **CompD** components.
+The following example shows the two-way synchronization between @Provide and @Consume decorated variables. When the buttons in the **CompA** and **CompD** components are clicked, the changes to **reviewVotes** are synchronized to the **CompA** and **CompD** components.
 
 
 

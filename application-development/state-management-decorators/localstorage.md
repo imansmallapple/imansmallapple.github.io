@@ -1,10 +1,16 @@
+---
+title: LocalStorage
+parent: Introduction to ArkTS
+layout: default
+---
+
 # LocalStorage: UI State Storage
 
 
-LocalStorage provides storage for the page-level UI state. The parameters of the LocalStorage type accepted through the \@Entry decorator share the same LocalStorage instance on the page. LocalStorage also allows for state sharing between pages with UIAbility instances.
+LocalStorage provides storage for the page-level UI state. The parameters of the LocalStorage type accepted through the @Entry decorator share the same LocalStorage instance on the page. LocalStorage also allows for state sharing between pages with UIAbility instances.
 
 
-This topic describes only the LocalStorage application scenarios and related decorators: **\@LocalStorageProp** and **\@LocalStorageLink**.
+This topic describes only the LocalStorage application scenarios and related decorators: **@LocalStorageProp** and **@LocalStorageLink**.
 
 
 > **NOTE**
@@ -18,26 +24,26 @@ LocalStorage is an in-memory "database" that ArkTS provides for storing state va
 
 - An application can create multiple LocalStorage instances. These instances can be shared on a page or, by using the **GetShared** API, across pages in a UIAbility instance.
 
-- The root node of a component tree, that is, the \@Component decorated by \@Entry, can be assigned to a LocalStorage instance. All child instances of this custom component automatically gain access to the same LocalStorage instance.
+- The root node of a component tree, that is, the @Component decorated by @Entry, can be assigned to a LocalStorage instance. All child instances of this custom component automatically gain access to the same LocalStorage instance.
 
-- An \@Component decorated component has access to at most one LocalStorage instance and to `AppStorage`. A component not decorated with \@Entry cannot be assigned a LocalStorage instance. It can only accept a LocalStorage instance passed from its parent component through \@Entry. A LocalStorage instance can be assigned to multiple components in the component tree.
+- An @Component decorated component has access to at most one LocalStorage instance and to `AppStorage`. A component not decorated with @Entry cannot be assigned a LocalStorage instance. It can only accept a LocalStorage instance passed from its parent component through @Entry. A LocalStorage instance can be assigned to multiple components in the component tree.
 
 - All attributes in LocalStorage are mutable.
 
 The application determines the lifecycle of a LocalStorage object. The JS Engine will garbage collect a LocalStorage object when the application releases the last reference to it, which includes deleting the last custom component.
 
-LocalStorage provides two decorators based on the synchronization type of the component decorated with \@Component:
+LocalStorage provides two decorators based on the synchronization type of the component decorated with @Component:
 
 - [@LocalStorageProp](#localstorageprop): creates a one-way data synchronization with the named attribute in LocalStorage.
 
 - [@LocalStorageLink](#localstoragelink): creates a two-way data synchronization with the named attribute in LocalStorage.
 
-## \@LocalStorageProp
+## @LocalStorageProp
 
-As mentioned above, if you want to establish a binding between LocalStorage and a custom component, you need to use the \@LocalStorageProp and \@LocalStorageLink decorators. Specially, use \@LocalStorageProp(key) or \@LocalStorageLink(key) to decorate variables in the component, where **key** identifies the attribute in LocalStorage.
+As mentioned above, if you want to establish a binding between LocalStorage and a custom component, you need to use the @LocalStorageProp and @LocalStorageLink decorators. Specially, use @LocalStorageProp(key) or @LocalStorageLink(key) to decorate variables in the component, where **key** identifies the attribute in LocalStorage.
 
 
-When a custom component is initialized, the \@LocalStorageProp(key)/\@LocalStorageLink(key) decorated variable is initialized with the value of the attribute with the given key in LocalStorage. Local initialization is mandatory. If an attribute with the given key is missing from LocalStorage, it will be added with the stated initializing value. (Whether the attribute with the given key exists in LocalStorage depends on the application logic.)
+When a custom component is initialized, the @LocalStorageProp(key)/@LocalStorageLink(key) decorated variable is initialized with the value of the attribute with the given key in LocalStorage. Local initialization is mandatory. If an attribute with the given key is missing from LocalStorage, it will be added with the stated initializing value. (Whether the attribute with the given key exists in LocalStorage depends on the application logic.)
 
 
 > **NOTE**
@@ -45,18 +51,18 @@ When a custom component is initialized, the \@LocalStorageProp(key)/\@LocalStora
 > This decorator can be used in ArkTS widgets since API version 9.
 
 
-By decorating a variable with \@LocalStorageProp(key), a one-way data synchronization is established from the attribute with the given key in LocalStorage to the variable. This means that, local changes (if any) will not be synchronized to LocalStorage, and an update to the attribute with the given key in LocalStorage – for example, a change made with the **set ** API – will overwrite local changes.
+By decorating a variable with @LocalStorageProp(key), a one-way data synchronization is established from the attribute with the given key in LocalStorage to the variable. This means that, local changes (if any) will not be synchronized to LocalStorage, and an update to the attribute with the given key in LocalStorage – for example, a change made with the **set ** API – will overwrite local changes.
 
 
-## \@LocalStorageLink
+## @LocalStorageLink
 
-\@LocalStorageLink is required if you need to synchronize the changes of the state variables in a custom component back to LocalStorage.
+@LocalStorageLink is required if you need to synchronize the changes of the state variables in a custom component back to LocalStorage.
 
-\@LocalStorageLink(key) creates a two-way data synchronization with the attribute with the given key in LocalStorage.
+@LocalStorageLink(key) creates a two-way data synchronization with the attribute with the given key in LocalStorage.
 
 1. If a local change occurs, it is synchronized to LocalStorage.
 
-2. Changes in LocalStorage are synchronized to all attributes with the given key, including one-way bound variables (\@LocalStorageProp decorated variables and one-way bound variables created through \@Prop) and two-way bound variables (\@LocalStorageLink decorated variables and two-way bound variables created through \@Link).
+2. Changes in LocalStorage are synchronized to all attributes with the given key, including one-way bound variables (@LocalStorageProp decorated variables and one-way bound variables created through @Prop) and two-way bound variables (@LocalStorageLink decorated variables and two-way bound variables created through @Link).
 
 ## Use Scenarios
 
@@ -76,15 +82,15 @@ link1.set(49); // two-way sync: link1.get() == link2.get() == prop.get() == 49
 
 ### Example for Using LocalStorage Inside the UI
 
-The two decorators \@LocalStorageProp and \@LocalStorageLink can work together to obtain the state variable stored in a LocalStorage instance in the UI component.
+The two decorators @LocalStorageProp and @LocalStorageLink can work together to obtain the state variable stored in a LocalStorage instance in the UI component.
 
-This example uses \@LocalStorageLink to show how to:
+This example uses @LocalStorageLink to show how to:
 
 - Use the **build** function to create a LocalStorage instance named **storage**.
 
-- Use the \@Entry decorator to add **storage** to the top-level component **CompA**.
+- Use the @Entry decorator to add **storage** to the top-level component **CompA**.
 
-- Use \@LocalStorageLink to create a two-way data synchronization with the given attribute in LocalStorage.
+- Use @LocalStorageLink to create a two-way data synchronization with the given attribute in LocalStorage.
 
  ```ts
 class PropB {
@@ -150,7 +156,7 @@ struct CompA {
     <img src='/application-development/image-basic/image25.png'>
 </div>
 
-### Simple Example of Using \@LocalStorageProp with LocalStorage
+### Simple Example of Using @LocalStorageProp with LocalStorage
 
 In this example, the **CompA** and **Child** components create local data that is one-way synchronized with the PropA attribute in the LocalStorage instance **storage**.
 

@@ -1,4 +1,10 @@
-# \@Prop Decorator
+---
+title: Prop Decorator
+parent: Introduction to ArkTS
+layout: default
+---
+
+# @Prop Decorator
 One-way synchronization is supported between an `@Prop` decorated variable a variable of its parent component. This means that, an `@Prop` decorated variable is mutable, and its changes will not be synchronized to the parent component.
 
 ## Features
@@ -163,7 +169,7 @@ After **replace entire arr** is clicked, the following information is displayed:
 
 - After **replace entire arr** is clicked, if **this.arr[0] == 1** is true, **this.arr** is set to **[3, 4, 5]**.
 
-- Because **this.arr[0]** has been changed, the **Child({value: this.arr[0]})** component synchronizes the update of **this.arr[0]** to the instance's \@Prop decorated variable. The same happens for **Child({value: this.arr[1]})** and **Child({value: this.arr[2]})**.
+- Because **this.arr[0]** has been changed, the **Child({value: this.arr[0]})** component synchronizes the update of **this.arr[0]** to the instance's @Prop decorated variable. The same happens for **Child({value: this.arr[1]})** and **Child({value: this.arr[2]})**.
 
 - The change of **this.arr** causes **ForEach** to update: According to the diff algorithm, the array item with the ID **3** is retained in this update, array items with IDs **1** and **2** are deleted, and array items with IDs **4** and **5** are added. The array before and after the update is **[1, 2, 3]** and **[3, 4, 5]**, respectively. This implies that the **Child** instance generated for item **3** is moved to the first place, but not updated. In this case, the component value corresponding to **3** is **7**, and the final render result of **ForEach** is **7**, **4**, and **5**.
 

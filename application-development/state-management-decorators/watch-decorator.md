@@ -1,7 +1,13 @@
-# \@Watch Decorator
+---
+title: Watch Decorator
+parent: Introduction to ArkTS
+layout: default
+---
+
+# @Watch Decorator
 
 
-\@Watch is used to listen for state variables. If your application needs watch for value changes of a state variable, you can decorate the variable with \@Watch.
+@Watch is used to listen for state variables. If your application needs watch for value changes of a state variable, you can decorate the variable with @Watch.
 
 
 > **NOTE**
@@ -11,22 +17,22 @@
 
 ## Overview
 
-An application can request to be notified whenever the value of the \@Watch decorated variable changes. The \@Watch callback is called when the value change has occurred. \@Watch uses strict equality (===) to determine whether a value is updated in the ArkUI framework. If **false** is returned, the \@Watch callback is triggered.
+An application can request to be notified whenever the value of the @Watch decorated variable changes. The @Watch callback is called when the value change has occurred. @Watch uses strict equality (===) to determine whether a value is updated in the ArkUI framework. If **false** is returned, the @Watch callback is triggered.
 
 ## Restrictions
 
-- Pay attention to the risk of infinite loops. Loops can be caused by the \@Watch callback directly or indirectly mutating the same variable. To avoid loops, avoid mutating the \@Watch decorated state variable inside the callback handler.
+- Pay attention to the risk of infinite loops. Loops can be caused by the @Watch callback directly or indirectly mutating the same variable. To avoid loops, avoid mutating the @Watch decorated state variable inside the callback handler.
 
 - Pay attention to performance. The attribute value update function delays component re-render (see the preceding behavior description). The callback should only perform quick computations.
 
-- Calling **async await** from an \@Watch function is not recommended, because asynchronous behavior may cause performance issues of re-rendering.
+- Calling **async await** from an @Watch function is not recommended, because asynchronous behavior may cause performance issues of re-rendering.
 
 
 ## Application Scenarios
 
-### \@Watch and Custom Component Update
+### @Watch and Custom Component Update
 
-This example is used to clarify the processing steps of custom component updates and \@Watch. **count** is decorated by \@State in **CountModifier** and \@Prop in **TotalView**.
+This example is used to clarify the processing steps of custom component updates and @Watch. **count** is decorated by @State in **CountModifier** and @Prop in **TotalView**.
 
 
 ```ts
@@ -65,7 +71,7 @@ Processing steps:
 
 1. The click event **Button.onClick** of the **CountModifier** custom component increases the value of **count**.
 
-2. In response to the change of the @State decorated variable **count**, \@Prop in the child component **TotalView** is updated, and its **\@Watch('onCountUpdated')** callback is triggered, which updates the **total** variable in **TotalView**.
+2. In response to the change of the @State decorated variable **count**, @Prop in the child component **TotalView** is updated, and its **@Watch('onCountUpdated')** callback is triggered, which updates the **total** variable in **TotalView**.
 
 3. The **Text** component in the child component **TotalView** is re-rendered.
 

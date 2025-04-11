@@ -1,4 +1,10 @@
-# \@Observed and \@ObjectLink Decorators
+---
+title: Observed and ObjectLink Decorators
+parent: Introduction to ArkTS
+layout: default
+---
+
+# @Observed and @ObjectLink Decorators
 
 @ObjectLink and @Observed class decorators are used for two-way data synchronization in scenarios involving **nested objects or arrays**, making up for the limitation that other decorators can only observe changes in one layer.
 
@@ -13,11 +19,11 @@
 
 ## Constraints
 
-- Using \@Observed to decorate a class changes the original prototype chain of the class. Using \@Observed and other class decorators to decorate the same class may cause problems.
+- Using @Observed to decorate a class changes the original prototype chain of the class. Using @Observed and other class decorators to decorate the same class may cause problems.
 
-- The \@ObjectLink decorator cannot be used in custom components decorated by \@Entry.
+- The @ObjectLink decorator cannot be used in custom components decorated by @Entry.
 
-- Value assignment is not allowed for the \@ObjectLink decorated variable. To assign a value, use \@Prop instead.
+- Value assignment is not allowed for the @ObjectLink decorated variable. To assign a value, use @Prop instead.
 
 ## Usage Scenarios
 ### Nested Object
@@ -175,17 +181,17 @@ The @Observed decorated **BookName** class can observe changes in the attributes
 Event handles in **ViewB**:
 
 
-- **this.user.bag = new Bag(10)** and **this.user = new User(new Bag(20))**: Change to the \@State decorated variable **size** and its attributes.
+- **this.user.bag = new Bag(10)** and **this.user = new User(new Bag(20))**: Change to the @State decorated variable **size** and its attributes.
 
-- **this.child.bookName.size += ...**: Change at the second layer. Though \@State cannot observe changes at the second layer, the change of an attribute of \@Observed decorated **Bag**, which is attribute **size** in this example, can be observed by \@ObjectLink.
+- **this.child.bookName.size += ...**: Change at the second layer. Though @State cannot observe changes at the second layer, the change of an attribute of @Observed decorated **Bag**, which is attribute **size** in this example, can be observed by @ObjectLink.
 
 
 Event handle in **ViewC**:
 
 
-- **this.bookName.size += 1**: A change to the \@ObjectLink decorated variable **size** causes the button label to be updated. Unlike \@Prop, \@ObjectLink does not have a copy of its source. Instead, \@ObjectLink creates a reference to its source.
+- **this.bookName.size += 1**: A change to the @ObjectLink decorated variable **size** causes the button label to be updated. Unlike @Prop, @ObjectLink does not have a copy of its source. Instead, @ObjectLink creates a reference to its source.
 
-- The \@ObjectLink decorated variable is read-only. Assigning **this.bookName = new bookName(...)** is not allowed. Once value assignment occurs, the reference to the data source is reset and the synchronization is interrupted.
+- The @ObjectLink decorated variable is read-only. Assigning **this.bookName = new bookName(...)** is not allowed. Once value assignment occurs, the reference to the data source is reset and the synchronization is interrupted.
 
 ### Additional Information
 For more detailed information, click the link [here](https://github.com/eclipse-oniro-mirrors/docs/blob/OpenHarmony-4.1-Release/en/application-dev/quick-start/arkts-observed-and-objectlink.md)

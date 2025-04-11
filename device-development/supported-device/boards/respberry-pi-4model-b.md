@@ -1,5 +1,5 @@
 # Raspberry Pi 4 Model B Development Kit
-Text from (https://github.com/eclipse-oniro4openharmony/eclipse-oniro4openharmony.github.io/blob/main/developer-boards/raspberry-pi-4model-b.md)  
+Text from [here](https://github.com/eclipse-oniro4openharmony/eclipse-oniro4openharmony.github.io/blob/main/developer-boards/raspberry-pi-4model-b.md)  
 ## Introduction
 The Raspberry Pi 4B is powered by the Broadcom BCM2711, a quad-core Cortex-A72 (ARM v8) 64-bit SoC clocked at 1.8GHz. It offers significant performance improvements over previous models, making it an ideal choice for projects requiring higher processing power. The board also supports a variety of peripherals including high-speed USB 3.0, dual HDMI outputs, and Gigabit Ethernet.
 
@@ -12,7 +12,7 @@ The Oniro Project supports the Raspberry Pi 4B, and the following features have 
 - Touch input
 - Mouse input
 
-![Oniro on Raspberry Pi 4b and waveshare 7inch touch screen](/Images/device-development/supported-device/rpi4b-waveshare-oniro.png)\
+![Oniro on Raspberry Pi 4b and waveshare 7inch touch screen](../images/rpi4b-waveshare-oniro.png)\
 *Oniro on Raspberry Pi 4b and waveshare 7inch touch screen*
 
 ## Specification
@@ -131,7 +131,7 @@ You can now insert the SD card into your Raspberry Pi 4B for use.
 
 To debug via serial, use the following pin configuration:
 
-![Serial Pin Configuration](/Images/device-development/supported-device/rpi4b-gpio.png)
+![Serial Pin Configuration](../images/rpi4b-gpio.png)
 
 Connect the pins as shown in the diagram (Pins 6, 8, and 10). Then, use the following Minicom command to establish the serial connection:
 

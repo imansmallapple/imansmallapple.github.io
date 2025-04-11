@@ -16,7 +16,7 @@ Different selection options can be explored from `Selection` in the menu tab. A 
 To save a file press `Ctrl+S` or enable auto save from `File -> Auto Save` which will save your changes after a configured delay or when focus leaves the editor.
 
 ## Find & Replace
-![Alt text](/Images/device-development/oniro-ide/find-and-replace.png)
+![Alt text](./images/find-and-replace.png)
 Press `Ctrl+F` to toggle the `Find` feature of the IDE, write the word or phrase you're searching for and press `Enter` or `Shift+Enter` to go up and down the results. As seen in the above figure, there are several options to the search namely:
 
 1. **Match Case:** to find a word or phrase with the same case letters.

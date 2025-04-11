@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Raspberry Pi 4 Model B Development Kit
+title: Raspberry Pi 4 Model B
 parent: boards
 grand_parent: Supported Devices
 nav_order: 2

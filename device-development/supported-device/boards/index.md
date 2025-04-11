@@ -13,8 +13,3 @@ This section delves into the specifics of Eclipse Oniro's supported developer bo
 
 Currently this only cover the [HiHope SCDAYU200 development board](./hihope_hh-scdayu200).
 Given Eclipse Oniro is based on OpenHarmony, a way broader set of hardware support is available in the codebase. The only reason the other devices are not listedhere, is the missing active use and CI/CD testing.  
-
-
-####  TABLE OF CONTENTS
-- [HiHope HH-SCDAYU200](/device-development/supported-device/boards/hihope_hh-scdayu200.md)  
-- [Raspberry Pi 4 Model B](/device-development/supported-device/boards/respberry-pi-4model-b.md)  

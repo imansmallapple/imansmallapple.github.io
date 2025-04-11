@@ -172,7 +172,7 @@ struct ViewB {
 ```
 
 <div style="text-align:center">
-    <img src='/application-development/image-basic/v8.gif'>
+    <img src='../basic-concepts/images/image-basic/v8.gif'>
 </div>
 
 The @Observed decorated **BookName** class can observe changes in the attributes inherited from the base class.

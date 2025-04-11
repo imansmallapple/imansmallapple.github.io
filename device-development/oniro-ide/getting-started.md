@@ -58,7 +58,10 @@ When you open the browser at `http://localhost:3000/` you will see the browser v
 
 ## Creating and Running a Project
 
-![create-project](/Images/device-development/oniro-ide/create-project.png)  
+<div style="text-align:center">
+    <img src='./images/create-project.png'>
+</div>
+
 To create a new project navigate to `Project` from the menu tab and click `New Project`. From the pop-up window select the folder where you want to save your project and give your project a name. Finally select the hardware chip of your choice, click `Next` and `Finish`. This creates a new project workspace for your development.
 
 To open your project, navigate to `File -> Open...` from the menu tab, navigate to your project's location, and click `Open`. This will open your project as you can see down in the `Explorer`.

@@ -10,7 +10,9 @@ nav_order: 2
 
 At its heart, Oniro IDE is a code editor. Like many other code editors, Oniro IDE adopts a common user interface and layout of an explorer on the left, showing all of the files and folders you can access, and an editor on the right, showing the content of the files you have opened.
 
-![](/Images/device-development/oniro-ide/Main-Layout.png)
+<div style="text-align:center">
+    <img src='./images/Main-Layout.png'>
+</div>
 
 ## Basic Layout
 The basic layout consists of 8 main areas:
@@ -43,7 +45,11 @@ On the top of the `Explorer` side view you can find a pane called `Open Editors`
 ## Views
 
 The `Explorer` is one of multiple other views available in Oniro IDE. 
-![](/Images/device-development/oniro-ide/view-menu.png)
+
+<div style="text-align:center">
+    <img src='./images/view-menu.png'>
+</div>
+
 By navigating to `View` from the menu bar, you can see the multiple views that can be opened, such as:
 * **Search** Provides global search and replace across your open folder.
 * **Debug** for debugging tools displaying the `Call Stack`, `Variables`, `Breakpoints` throughout the code, and a `Watch` monitoring select variables.

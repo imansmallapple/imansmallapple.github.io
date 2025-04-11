@@ -15,7 +15,7 @@ The Eclipse Oniro architecture builds on the solid foundations of OpenHarmony, e
 - **libvsync** improves the performance and reliability of applications that require precise coordination across multiple processes.
 Future enhancements will include the integration of **NearLink**, offering an alternative to Wi-Fi and Bluetooth with lower latency and improved connectivity, particularly suited for automotive and industrial environments.
 
-Text from (https://oniroproject.org/)
+Text from [here](https://oniroproject.org/)
 
 ### Features    
 **Hardware collaboration and resource sharing**  
@@ -46,7 +46,7 @@ Consistent APIs ensure the operational compatibility of applications across devi
 
 OpenHarmony enables hardware resources to be scaled with its component-based and small-scale designs. It can be deployed on demand for a diverse range of devices, including ARM, RISC-V, and x86 architectures, and providing RAM volumes ranging from hundreds of KiB to GiB.
 
-Text from (https://docs.openharmony.cn/pages/v4.1/en/OpenHarmony-Overview.md)  
+Text from [here](https://docs.openharmony.cn/pages/v4.1/en/OpenHarmony-Overview.md)  
 >**Note:** need verify the words used in this text like 'OpenHarmony' since we want to emphasize Oniro  
 
 
@@ -63,7 +63,7 @@ A small system runs on devices whose memory is greater than or equal to 1 MiB an
 - **Standard system**  
 A standard system runs on devices whose memory is greater than or equal to 128 MiB and that are equipped with application processors such as Arm Cortex-A. This system provides a complete application framework supporting the enhanced interaction, 3D GPU, hardware composer, diverse components, and rich animations. This system applies to high-end refrigerator displays.
 
-Text from (https://docs.openharmony.cn/pages/v4.1/en/OpenHarmony-Overview.md)  
+Text from [here](https://docs.openharmony.cn/pages/v4.1/en/OpenHarmony-Overview.md)  
 >**Note:** need verify the words used in this text like 'OpenHarmony' since we want to emphasize Oniro
 
 

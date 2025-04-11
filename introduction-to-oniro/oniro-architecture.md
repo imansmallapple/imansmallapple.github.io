@@ -4,7 +4,7 @@ title: Oniro Architecture
 parent: Eclipse Oniro Project
 ---
 ### Architecture  
-![alt text](../Images/Operating-System-Architecture/oniro-architecture.jpg)
+![alt text](./images/oniro-architecture.jpg)
 
 The Eclipse Oniro architecture builds on the solid foundations of OpenHarmony, enhancing and expanding its capabilities. All system enhancements are rigorously managed by an **advanced IP toolchain** to ensure compliance throughout the development process. Within this framework:
 

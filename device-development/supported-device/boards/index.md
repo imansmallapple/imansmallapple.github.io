@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Developer Boards supported by Eclipse Oniro
+title: boards
 parent: Supported Devices
 grand_parent: Device Development
 nav_order: 1

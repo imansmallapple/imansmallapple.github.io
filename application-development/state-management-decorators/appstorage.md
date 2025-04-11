@@ -12,7 +12,7 @@ AppStorage provides central storage for application UI state attributes. It is b
 Unlike LocalStorage, which is usually used for page-level state sharing, AppStorage enables application-wide UI state sharing. AppStorage is equivalent to the hub of the entire application. 
 
 
-This topic describes the AppStorage use scenarios and related decorators: **\@StorageProp** and **\@StorageLink**.
+This topic describes the AppStorage use scenarios and related decorators: **@StorageProp** and **@StorageLink**.
 
 
 ## Overview
@@ -28,21 +28,21 @@ You can also use `AppStorage` to **share state between multiple pages (UIAbility
 
 If you want some values to be **saved even after the app is closed**, you can connect `AppStorage` to other storage sources—like databases or cloud services—using decorators like `@StorageProp` and `@StorageLink`.
 
-## \@StorageProp
+## @StorageProp
 
-As mentioned above, if you want to establish a binding between AppStorage and a custom component, you'll need the \@StorageProp or \@StorageLink decorator. Use \@StorageProp(key) or \@StorageLink(key) to decorate variables in the component, where **key** identifies an attribute in AppStorage.
+As mentioned above, if you want to establish a binding between AppStorage and a custom component, you'll need the @StorageProp or @StorageLink decorator. Use @StorageProp(key) or @StorageLink(key) to decorate variables in the component, where **key** identifies an attribute in AppStorage.
 
-When a custom component is initialized, the attribute value corresponding to the key in AppStorage is used to initialize the \@StorageProp(key) or \@StorageLink(key) decorated variable. Whether the attribute with the given key exists in AppStorage depends on the application logic. This means that it may be missing from AppStorage. In light of this, local initialization is mandatory for the \@StorageProp(key) or \@StorageLink(key) decorated variable.
+When a custom component is initialized, the attribute value corresponding to the key in AppStorage is used to initialize the @StorageProp(key) or @StorageLink(key) decorated variable. Whether the attribute with the given key exists in AppStorage depends on the application logic. This means that it may be missing from AppStorage. In light of this, local initialization is mandatory for the @StorageProp(key) or @StorageLink(key) decorated variable.
 
-By decorating a variable with \@StorageProp(key), a one-way data synchronization is established from the attribute with the given key in AppStorage to the variable. A local change can be made, but it will not be synchronized to AppStorage. An update to the attribute with the given key in AppStorage will overwrite local changes.
+By decorating a variable with @StorageProp(key), a one-way data synchronization is established from the attribute with the given key in AppStorage to the variable. A local change can be made, but it will not be synchronized to AppStorage. An update to the attribute with the given key in AppStorage will overwrite local changes.
 
-## \@StorageLink
+## @StorageLink
 
-\@StorageLink(key) creates a two-way data synchronization between the variable it decorates and the attribute with the given key in AppStorage.
+@StorageLink(key) creates a two-way data synchronization between the variable it decorates and the attribute with the given key in AppStorage.
 
 1. Local changes are synchronized to AppStorage.
 
-2. Any change in AppStorage is synchronized to the attribute with the given key in all scenarios, including one-way bound variables (\@StorageProp decorated variables and one-way bound variables created through \@Prop), two-way bound variables (\@StorageLink decorated variables and two-way bound variables created through \@Link), and other instances (such as PersistentStorage).
+2. Any change in AppStorage is synchronized to the attribute with the given key in all scenarios, including one-way bound variables (@StorageProp decorated variables and one-way bound variables created through @Prop), two-way bound variables (@StorageLink decorated variables and two-way bound variables created through @Link), and other instances (such as PersistentStorage).
 
 ## Use Scenarios
 ### Example of Using AppStorage and LocalStorage in Application Logic
@@ -77,7 +77,7 @@ prop.get() // == 49
 
 ### Example of Using AppStorage and LocalStorage Inside the UI
 
-\@StorageLink works together with AppStorage in the same way as \@LocalStorageLink works together with LocalStorage. It creates two-way data synchronization with an attribute in AppStorage.
+@StorageLink works together with AppStorage in the same way as @LocalStorageLink works together with LocalStorage. It creates two-way data synchronization with an attribute in AppStorage.
 
 
 ```ts

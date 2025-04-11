@@ -361,6 +361,7 @@ Compound assignment operators are as follows: `+=`, `-=`, `*=`, `/=`, `%=`, `<<=
 | `>=`     | Returns true if the left operand is greater than or equal to the right. |
 | `<`      | Returns true if the left operand is less than the right.     |
 | `<=`     | Returns true if the left operand is less than or equal to the right. |
+
 #### Arithmetic Operators
 
 Unary operators are `-`, `+`, `--` and `++`.
@@ -374,6 +375,7 @@ Binary operators are as follows:
 | `*`        | multiplication           |
 | `/`        | division                 |
 | `%`        | remainder after division |
+
 #### Bitwise Operators
 
 | Operator   | Description                                                                                                     |
@@ -385,6 +387,7 @@ Binary operators are as follows:
 | `a << b`   | Shift left: shifts the binary representation of *a* to the left by *b* bits.                                    |
 | `a >> b`   | Arithmetic right shift: shifts the binary representation of *a* to the right by *b* bits with sign-extension.   |
 | `a >>> b`  | Logical right shift: shifts the binary representation of *a* to the right by *b* bits with zero-extension.      |
+
 #### Logical Operators
 
 | Operator   | Description   |
@@ -392,6 +395,7 @@ Binary operators are as follows:
 | `a && b`   | Logical AND  |
 | `a \|\| b`   | Logical OR   |
 | `! a`      | Logical NOT  |
+
 ### Statements
 
 #### `If` Statements

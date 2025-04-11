@@ -1,7 +1,7 @@
 ---
 layout: default
-title: HiHope HH-SCDAYU200 Development Kit
-parent: Developer Boards supported by Eclipse Oniro
+title: HiHope HH-SCDAYU200
+parent: boards
 grand_parent: Supported Devices
 nav_order: 1
 ---

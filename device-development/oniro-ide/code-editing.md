@@ -1,3 +1,11 @@
+---
+layout: default
+title: Code Editing
+parent: Oniro IDE
+grand_parent: Device Development
+nav_order: 2
+---
+
 ## Keyboard Shortcuts
 Being able to keep your hands on the keyboard when writing code is crucial for high productivity. You can explore various keyboard shortcuts by navigating to `File -> Preferences -> Keyboard Shortcuts` from the menu tab or clicking `Ctrl+Alt+,`.
 

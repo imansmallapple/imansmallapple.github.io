@@ -1,3 +1,11 @@
+---
+layout: default
+title: Refactoring
+parent: Oniro IDE
+grand_parent: Device Development
+nav_order: 5
+---
+
 [Code Refactoring](https://refactoring.guru/refactoring) is an essential part of the software engineering life cycle. In this topic we will explain a few refactoring actions that are embedded into the IDE namely, `Rename Symbol`, `Extract Method`, and `Extract Variable`.
 
 ## Rename Symbol

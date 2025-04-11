@@ -1,3 +1,11 @@
+---
+layout: default
+title: Code Navigation
+parent: Oniro IDE
+grand_parent: Device Development
+nav_order: 3
+---
+
 A dynamic combination of programming languages' services and quick text editing gives Oniro IDE its power. In this topic we will give an overview of a few code navigation features which can be explored when you right click on a symbol (variable, function, method, class, etc.).
 
 ## Go to Definition

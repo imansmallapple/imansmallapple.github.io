@@ -1,3 +1,11 @@
+---
+layout: default
+title: Getting Started
+parent: Oniro IDE
+grand_parent: Device Development
+nav_order: 1
+---
+
 ## Installation
 Please make sure that your system follows the [Theia development prerequisites](https://github.com/eclipse-theia/theia/blob/master/doc/Developing.md#prerequisites).
 

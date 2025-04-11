@@ -1,3 +1,11 @@
+---
+layout: default
+title: User Interface
+parent: Oniro IDE
+grand_parent: Device Development
+nav_order: 2
+---
+
 # User Interface
 
 At its heart, Oniro IDE is a code editor. Like many other code editors, Oniro IDE adopts a common user interface and layout of an explorer on the left, showing all of the files and folders you can access, and an editor on the right, showing the content of the files you have opened.

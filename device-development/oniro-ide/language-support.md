@@ -1,3 +1,11 @@
+---
+layout: default
+title: Language Support
+parent: Oniro IDE
+grand_parent: Device Development
+nav_order: 6
+---
+
 Oniro IDE is built using [Theia](https://theia-ide.org/docs/), which is heavily influenced by VS Code. The languages supported by the IDE are all those supported by VS Code. Examples of such are:
 
 | [![Python](/Images/device-development/oniro-ide/python.png) **Python**](https://code.visualstudio.com/docs/languages/python) | [![C/C++](/Images/device-development/oniro-ide/c-c++.png) **C/C++**](https://code.visualstudio.com/docs/languages/cpp) | [![C#](/Images/device-development/oniro-ide/cs.png) **C#**](https://code.visualstudio.com/docs/languages/csharp) |

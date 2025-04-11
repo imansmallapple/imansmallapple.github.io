@@ -1,4 +1,11 @@
-Text from (https://github.com/eclipse-oniro4openharmony/eclipse-oniro4openharmony.github.io/blob/main/eclipse-oniro-project/building-oniro.md)
+---
+layout: default
+title: Building Oniro
+parent: Device Development
+nav_order: 1
+---
+
+Text from [here](https://github.com/eclipse-oniro4openharmony/eclipse-oniro4openharmony.github.io/blob/main/eclipse-oniro-project/building-oniro.md)
 
 # Building Oniro
 

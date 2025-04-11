@@ -1,9 +1,9 @@
 ---
 layout: default
 title: Raspberry Pi 4 Model B Development Kit
-parent: Developer Boards supported by Eclipse Oniro
+parent: boards
 grand_parent: Supported Devices
-nav_order: 1
+nav_order: 2
 ---
 
 # Raspberry Pi 4 Model B Development Kit

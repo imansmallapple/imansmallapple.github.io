@@ -10,7 +10,7 @@ Oniro IDE is built using [Theia](https://theia-ide.org/docs/), which is heavily 
 
 | [![Python](./images/python.png) **Python**](https://code.visualstudio.com/docs/languages/python) | [![C/C++](./images/c-c++.png) **C/C++**](https://code.visualstudio.com/docs/languages/cpp) | [![C#](./images/cs.png) **C#**](https://code.visualstudio.com/docs/languages/csharp) |
 |:-------------:|:-------------:|:-------------:|
-| [![Go](./images/Go.png) **Go**](https://code.visualstudio.com/docs/languages/go) | [![Java](./images/java.png) **Java**](https://code.visualstudio.com/docs/languages/java) | [<img src="./images/js.png" width="100"> **JavaScript**](https://code.visualstudio.com/docs/languages/javascript) |
+| [![Go](./images/Go.png) **Go**](https://code.visualstudio.com/docs/languages/go) | [![Java](./images/java.png) **Java**](https://code.visualstudio.com/docs/languages/java) | [<img src="./images/js.png" width="50%"> <br> **JavaScript**](https://code.visualstudio.com/docs/languages/javascript) |
 
 
 The Language Features are also shared with those in VS Code:

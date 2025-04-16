@@ -5,6 +5,7 @@ parent: Application Development
 nav_order: 4
 has_children: true
 ---
+# Resource Categories and Access
 
 Text source from [here](https://github.com/eclipse-oniro-mirrors/docs/blob/OpenHarmony-4.1-Release/en/application-dev/quick-start/resource-categories-and-access.md)
 

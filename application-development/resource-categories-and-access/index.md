@@ -14,3 +14,5 @@ During application development, you may need to use different resources, such as
 - Application resources: configure device- or configuration-specific resources in the resource files.
 
 - System resources: Obtain the ID and configuration-specific values of colors, fonts, or other resources in [Resources](https://gitee.com/openharmony/docs/blob/master/en/design/ux-design/design-resources.md); obtain system icons in [HarmonyOS Symbol](https://developer.huawei.com/consumer/cn/design/harmonyos-symbol/).
+
+You can learn more about this chapter from [this](https://github.com/eclipse-oniro-mirrors/docs/blob/OpenHarmony-4.1-Release/en/application-dev/quick-start/resource-categories-and-access.md) source.

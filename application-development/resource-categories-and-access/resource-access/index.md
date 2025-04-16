@@ -4,10 +4,14 @@ title: Resource Access
 parent: Resource Categories and Access
 grand_parent: Application Development
 nav_order: 2
+has_children: true
 ---
 
-
 ## Resource Access
+
+- [HAP Resources](#hap-resources)  
+- [Cross-HAP/HSP Resources](#cross-haphsp-resources)  
+- [System Resources](#system-resources)  
 
 ### HAP Resources
 
@@ -38,57 +42,14 @@ The usage is as follows:
 - Obtain a **ResourceManager** object through the application context, and then call resource management APIs to access different resources.<br>For example, call **getContext.resourceManager.getStringByNameSync('app.string.XXX')** to obtain string resources; call **getContext.resourceManager.getRawFd('rawfilepath')** to obtain the descriptor of the HAP where the raw file is located, and then use the descriptor ({fd, offset, length}) to access the raw file.
 
 ### Cross-HAP/HSP Resources
-
-#### Cross-Bundle Access (for System Applications Only)
-
-- Call **createModuleContext(bundleName, moduleName)** to obtain the context of the target HAP/HSP module in another application. Obtain a **ResourceManager** object through the context, and then call [resource management APIs](../reference/apis-localization-kit/js-apis-resource-manager.md) to access different resources.<br>Example: **getContext.createModuleContext(bundleName, moduleName).resourceManager.getStringByNameSync('app.string.XXX')**
-
-#### Inter-Bundle, Cross-Module Access
-
-- Call **createModuleContext(moduleName)** to obtain the context of the target HAP/HSP module in the same application. Obtain a **ResourceManager** object through the context, and then call resource management APIs to access different resources.<br>Example: **getContext.createModuleContext(moduleName).resourceManager.getStringByNameSync('app.string.XXX').**
-
-- Use **$r** or **$rawfile** to reference resources. Specifically, perform either of the following:
-
-  1. Use *[hsp].type.name*, where **hsp** indicates the HSP module name, **type** indicates the resource type, and **name** indicates the resource name. The following is an example:
-  
-    ```ts
-      Text($r('[hsp].string.test_string'))
-        .fontSize($r('[hsp].float.font_size'))
-        .fontColor($r('[hsp].color.font_color'))  
-      Image($rawfile('[hsp].icon.png'))
-    ```
-  2. Use variables. The following is an example:
-
-   ```ts
-    @Entry
-    @Component
-    struct Index {
-      text: string = '[hsp].string.test_string';
-      fontSize: string = '[hsp].float.font_size';
-      fontColor: string = '[hsp].color.font_color';
-      image: string = '[hsp].media.string';
-      rawfile: string = '[hsp].icon.png';
-  
-      build() {
-        Row() {
-          Text($r(this.text))
-            .fontSize($r(this.fontSize))
-            .fontColor($r(this.fontColor))
-  
-          Image($r(this.image))
-  
-          Image($rawfile(this.rawfile))
-        }
-      }
-    }
-   ```
-  > **NOTE**
-  >
-  > The HSP module name must be placed in the brackets ([]). If the **rawfile** directory contains multiple levels of folders, the path must start from the first level, for example, **\$rawfile('[hsp].oneFile/twoFile/icon.png')**. When **$r** or **$rawfile** is used for cross-HSP resource access, resource verification is not available at compile time, and you need to manually check that the target resources exist in the corresponding location.
+For cross-HAP/HSP resources, we have different scenarios as following:
+- Cross-bundle access (for system applications only)
+- Inter-bundle, cross-module access
+For detailed information please check the source [here](https://docs.openharmony.cn/pages/v5.0/en/application-dev/quick-start/resource-categories-and-access.md#cross-bundle-access-for-system-applications-only)
 
 ### System Resources
 
-Apart from custom resources, you can use system resources to develop different applications with the same visual style. For details about the system resource IDs and their values in different configurations, see [Resources](../../design/ux-design/design-resources.md).
+Apart from custom resources, developers can obtain the ID and configuration-specific values of colors, fonts, or other resources in [Resources](https://gitee.com/openharmony/docs/blob/master/en/design/ux-design/design-resources.md) and system icons in [HarmonyOS Symbol](https://developer.huawei.com/consumer/cn/design/harmonyos-symbol/).
 
 During development, the usage of layered parameters is basically the same as that of qualifiers. To reference a system resource, use the "$r('sys.type.resource_id')" format. Wherein: **sys** indicates a system resource; **type** indicates the resource type, which can be **color**, **float**, **string**, or **media**; **resource_id** indicates the resource ID.
 

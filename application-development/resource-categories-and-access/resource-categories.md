@@ -8,8 +8,8 @@ nav_order: 1
 
 ## Resource Categories
 
-Resource files used during application development must be stored in specified directories for management. There are two types of resource directories, namely, resource directories and resource group directories. 
-The resource directories are the **base**, qualifiers, **rawfile**, and **resfile** directories. The resource group directories are the **element**, **media**, and **profile** directories.
+Resource files used during application development must be stored in specified directories for management. There are two types of resource directories, namely, **resource directories** and **resource group directories**. 
+The resource directories are the **base**, **qualifiers**, **rawfile** directories. The resource group directories are the **element**, **media**, and **profile** directories.
 
 > **NOTE**
 >
@@ -20,34 +20,21 @@ Example of the **resources** directory:
 resources
 |---base
 |   |---element
+|   |   |---color.json
 |   |   |---string.json
 |   |---media
 |   |   |---icon.png
+|   |   |---startIcon.png
 |   |---profile
-|   |   |---test_profile.json
+|   |   |---main_pages.json
 |---en_US  // Default directory. When the device language is en-us, resources in this directory are preferentially matched.
 |   |---element
 |   |   |---string.json
-|   |---media
-|   |   |---icon.png
-|   |---profile
-|   |   |---test_profile.json
+|---rawfile // Other types of files are saved as raw files and will not be integrated into the resources.index file. You can customize the file name as needed.
 |---zh_CN  // Default directory. When the device language is zh-cn, resources in this directory are preferentially matched.
 |   |---element
 |   |   |---string.json
-|   |---media
-|   |   |---icon.png
-|   |---profile
-|   |   |---test_profile.json
-|---en_GB-vertical-car-mdpi // Example of a qualifiers directory, which needs to be created on your own.
-|   |---element
-|   |   |---string.json
-|   |---media
-|   |   |---icon.png
-|   |---profile
-|   |   |---test_profile.json
-|---rawfile // Other types of files are saved as raw files and will not be integrated into the resources.index file. You can customize the file name as needed.
-|---resfile // Other types of files are saved as raw files and will not be integrated into the resources.index file. You can customize the file name as needed.
+|---module.json5
 ```
 ### Resource Directories
 
@@ -64,15 +51,11 @@ Resource files in the subdirectories are compiled into binary files, and each re
 
 You can create multiple levels of subdirectories with custom names to store various resource files.<br>Resource files in the subdirectories are directly packed into the application without being compiled, and no IDs will be assigned to the resource files. The subdirectories are referenced based on the specified file path and file name.
 
-#### resfile Directory
-
-You can create multiple levels of subdirectories with custom names to store various resource files.<br>Resource files in the subdirectories are directly packed into the application without being compiled, and no IDs will be assigned to the resource files. After an application is installed, the **resfile** directory is decompressed to the application sandbox path. You can obtain the path through the resourceDir attribute of **Context**.
-
 ### Resource Group Directories
 
 Resource group directories include **element**, **media**, and **profile**, which are used to store resources of specific types.
 
-  **Table 3** Resource group directories
+  **Table 1** Resource group directories
 
 | Directory   | Description                                    | Resource File                                    |
 | --------- | ---------------------------------------- | ---------------------------------------- |
@@ -82,7 +65,7 @@ Resource group directories include **element**, **media**, and **profile**, whic
 
 **Media Resource Types**
 
-Table 4 Image resource types
+**Table 2** Image resource types
 
 | Format  | File Name Extension|
 | ---- | ----- |
@@ -93,7 +76,7 @@ Table 4 Image resource types
 | WEBP | .webp |
 | BMP  | .bmp  |
 
-Table 5 Audio and video resource types
+**Table 3** Audio and video resource types
 
 | Format                                  | File Name Extension        |
 | ------------------------------------ | --------------- |

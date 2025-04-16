@@ -8,6 +8,13 @@ layout: default
 
 # Common Issues and Solutions
 
+- [Installation failure after project creation](#installation-failure-after-project-creation)  
+- [Cannot find the emulator of a phone device](#cannot-find-the-emulator-of-a-phone-device)  
+- [Unable to find BMS service when running on emulator](#unable-to-find-bms-service-when-running-on-emulator)  
+- [Unstable USB connection, dev board not detected by IDE](#unstable-usb-connection-dev-board-not-detected-by-ide)  
+- [compileSdkVersion and releaseType of the app do not match the apiVersion and releaseType on the device](#compilesdkversion-and-releasetype-of-the-app-do-not-match-the-apiversion-and-releasetype-on-the-device)  
+- [Install failed](#install-failed)  
+
 ## Installation Failure After Project Creation
 
 ![alt text](./images/SDK-7.png)  

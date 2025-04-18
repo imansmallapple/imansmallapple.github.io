@@ -465,9 +465,10 @@ struct HelloComponent {
 ```
 On `Previewer`, click `Hello, World!`, the text will change into `Hello, ArkUI!`.
 
-<img src='./images/image-basic/image6.png' width=40%>
-<img src='./images/image-basic/image7.png'
-    width=40%>
+<div style="text-align:center">
+<img src='./images/image-basic/image6.png'>
+<img src='./images/image-basic/image7.png'>
+</div>
 
 > **NOTE**
 >
@@ -492,7 +493,7 @@ struct ParentComponent {
 ```
 
 <div style="text-align:center">
-    <img src='./images/image-basic/image8.png' width=60%>
+    <img src='./images/image-basic/image8.png'>
 </div> 
 
 ##### Basic Structure of a Custom Component
@@ -627,8 +628,10 @@ struct Son {
 ```
 Click the button defined in `Son`, `Text` result will be updated in `Parent`.
 
-<img src='./images/image-basic/image9.png' width=40%>
-<img src='./images/image-basic/image10.png' width=40%>
+<div style="text-align:center">
+<img src='./images/image-basic/image9.png'>
+<img src='./images/image-basic/image10.png'>
+</div>
 
 ##### Rules in build Function
 Whatever declared in build() are called UI descriptions. UI descriptions must comply with the following rules:
@@ -788,7 +791,7 @@ Whatever declared in build() are called UI descriptions. UI descriptions must co
 In ArkUI state management, UI re-render is driven by state.
 
 <div style="text-align:center">
-    <img src='./images/image-basic/image11.png' width=40%>
+    <img src='./images/image-basic/image11.png'>
 </div> 
 
  Therefore, do not change any state variable in the **build()** or @Builder decorated method of a custom component. Otherwise, loop rendering may result.

@@ -8,9 +8,6 @@ has_children: true
 The text base on [here](#https://github.com/imansmallapple/Oniro-docs/blob/main/application_development/development-overview.md)
 
 # Development Overview
-[Welcome to Oniro Application Development](#welcome-to-oniro-application-development)  
-[Development Environment](#development-environment)  
-[Learning Path](#learning-path)  
 
 ## Welcome to Oniro Application Development
 

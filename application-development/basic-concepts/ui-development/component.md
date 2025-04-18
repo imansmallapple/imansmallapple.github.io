@@ -31,9 +31,9 @@ The **List** component supports the generation of child components in various re
 
 A list automatically arranges child components in the direction it scrolls. Adding or removing child components from the list will trigger re-arrangement of the child components.
 
-As shown in the following figure, in a vertical list, **<ListItemGroup>** or **<ListItem>** components are automatically arranged vertically.
+As shown in the following figure, in a vertical list, **ListItemGroup** or **ListItem** components are automatically arranged vertically.
 
-**<ListItemGroup>** is used to display list data by group. Its child component is also **<ListItem>**. **<ListItem>** represents a list item, which can contain a single child component.
+**ListItemGroup** is used to display list data by group. Its child component is also **ListItem**. **ListItem** represents a list item, which can contain a single child component.
 
   **Figure 1** Relationships between **List**, **ListItemGroup**, and **ListItem** 
 
@@ -47,7 +47,7 @@ As shown in the following figure, in a vertical list, **<ListItemGroup>** or **<
 
 ### Display data in the list  
 
-The list displays a collection of items horizontally or vertically and can scroll to reveal content off the screen. In the simplest case, a **\<List>** component is statically made up of **\<ListItem>** components.
+The list displays a collection of items horizontally or vertically and can scroll to reveal content off the screen. In the simplest case, a **List** component is statically made up of **ListItem** components.
 
   **Figure 2** Example of a city list 
 

@@ -30,5 +30,7 @@ To start developing OpenHarmony applications, we first need to set up the develo
 To set up your development environment, please refer to  [Environment Setup Guide](/application-development/environment-setup-config/index).
 
 ## Learning Path
-**To be added**
 To facilitate your application development, we provide development guidelines for reference.
+
+You can familiarize yourself with the application development process by [getting started with a simple project](./create-first-eclipse-oniro-app/index).
+

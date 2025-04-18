@@ -23,7 +23,7 @@ layout: default
 
 ## List Component
 
-In typical mobile applications, data lists are commonly seen—for example, in settings pages, contact lists, and product catalogs.
+In typical mobile applications, list is very common and basic component. For example, we can find list in settings page, contact book, and product catalogs.
 
 The **List** component supports the generation of child components in various rendering modes like conditional rendering and rendering of repeated content.
 
@@ -238,7 +238,7 @@ struct EgDivider {
 ```
 The effect is drawing as follows:
 
-  **Figure 9** Using dividers between the list items 
+  **Figure 4** Using dividers between the list items 
 
 <div style="text-align:center">
     <img src='./images/image6.png'>
@@ -255,7 +255,7 @@ The effect is drawing as follows:
 #### Adding a Scrollbar
 When the total height (width) of list items exceeds the screen height (width), the list can scroll vertically (horizontally). The scrollbar of a list enables users to quickly navigate the list content, as shown below.
 
-  **Figure 10** Scrollbar of a list
+  **Figure 5** Scrollbar of a list
 
 <div style="text-align:center">
     <img src='./images/v1.gif'>

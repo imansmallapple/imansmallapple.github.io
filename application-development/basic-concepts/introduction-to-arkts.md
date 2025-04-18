@@ -465,8 +465,7 @@ struct HelloComponent {
 ```
 On `Previewer`, click `Hello, World!`, the text will change into `Hello, ArkUI!`.
 <div style="text-align:center">
-    <img src='./images/image-basic/image6.png' width=40%>
-    <img src='./images/image-basic/image7.png'
+    <img src='./images/image-basic/image6.png' width=40%><img src='./images/image-basic/image7.png'
     width=40%>
 </div> 
 

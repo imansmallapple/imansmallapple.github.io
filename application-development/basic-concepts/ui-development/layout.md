@@ -1,5 +1,5 @@
 ---
-title: Linear Layout
+title: Layout
 parent: ArkTS-based declarative UI development
 grand_parent: Basic Concepts
 nav_order: 1
@@ -10,8 +10,6 @@ layout: default
 The declarative UI provides different common layouts like **Linear layout**, **Stack layout**, **Flex layout** and etc.
 
 In this chapter we will focus on **Linear Layout**, for more layout go through [layout overview](https://github.com/eclipse-oniro-mirrors/docs/blob/OpenHarmony-4.1-Release/en/application-dev/ui/arkts-layout-development-overview.md) documentation.
-
-# Linear Layout
 
 Text from [source](https://github.com/eclipse-oniro-mirrors/docs/blob/OpenHarmony-4.1-Release/en/application-dev/ui/arkts-layout-development-linear.md)
 

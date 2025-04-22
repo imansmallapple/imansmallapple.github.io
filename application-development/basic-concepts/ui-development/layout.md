@@ -21,8 +21,8 @@ Text from [source](https://github.com/eclipse-oniro-mirrors/docs/blob/OpenHarmon
     - [In Column Container](#in-column-container-1)   
     - [In Row Container](#in-row-container-1)   
 - [Arrangement of Child Elements Along Cross Axis](#alignment-of-child-elements-along-cross-axis)  
-    - [Horizontal Alignment of Child Elements in <Column> Container](#horizontal-alignment-of-child-elements-in-column-container)   
-    - [Vertical Alignment of Child Elements in <Row> Container](#vertical-alignment-of-child-elements-in-row-container)   
+    - [Horizontal Alignment of Child Elements in Column Container](#horizontal-alignment-of-child-elements-in-column-container)   
+    - [Vertical Alignment of Child Elements in Row Container](#vertical-alignment-of-child-elements-in-row-container)   
 - [Adaptive Stretching](#adaptive-stretching)  
 - [Adaptive Scaling](#adaptive-scaling)  
 - [To add: Practice demo]()  
@@ -358,9 +358,9 @@ In the layout container, use the **alignItems** attribute to set the alignment m
 The layout container also provides the **alignSelf** attribute to control the alignment mode of a single child element along the cross axis. This attribute has a higher priority than the **alignItems** attribute. This means that, if **alignSelf** is set, it will overwrite the **alignItems** setting on the corresponding child element.
 
 
-### Horizontal Alignment of Child Elements in <Column> Container
+### Horizontal Alignment of Child Elements in Column Container
 
-  **Figure 7** Horizontal alignment of child elements in the <Column> container 
+  **Figure 7** Horizontal alignment of child elements in the **Column** container 
 
 <div style="text-align:center">
     <img src='../images/image-basic/image51.png'>
@@ -424,9 +424,9 @@ The layout container also provides the **alignSelf** attribute to control the al
 </div>
 
 
-### Vertical Alignment of Child Elements in <Row> Container
+### Vertical Alignment of Child Elements in Row Container
 
-  **Figure 8** Vertical alignment of child elements in <Row> container 
+  **Figure 8** Vertical alignment of child elements in **Row** container 
 
 <div style="text-align:center">
     <img src='../images/image-basic/image55.png'>

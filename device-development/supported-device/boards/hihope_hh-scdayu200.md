@@ -149,7 +149,7 @@ Once the above steps are completed successfully, you can proceed to flash the bo
 flash/flash.py -a -i ./out/rk3568/packages/phone/images
 ```
 
-### Connecting to serial console
+#### Connecting to serial console
 
 To read the serial output, ensure the board is correctly connected and powered on. The default baud rate for the HH-SCDAYU200 board is 1500000. You can use minicom or a similar serial terminal:
 
@@ -157,7 +157,7 @@ To read the serial output, ensure the board is correctly connected and powered o
 minicom -D /dev/ttyUSB0 -b 1500000
 ```
 
-## Windows System with built-in WSL
+### Windows System with built-in WSL
 Power on the device by attaching the power cable. Upon successful connection, type `lsusb` on **WSL** your serial console will display output similar to:
 
 ```bash
@@ -264,7 +264,7 @@ Once the above steps are completed successfully, you can proceed to flash the bo
 flash/flash.py -a -i ./out/rk3568/packages/phone/images
 ```
 
-### Connecting to serial console
+#### Connecting to serial console
 
 To read the serial output, ensure the board is correctly connected and powered on. The default baud rate for the HH-SCDAYU200 board is 1500000. You can use minicom or a similar serial terminal:
 

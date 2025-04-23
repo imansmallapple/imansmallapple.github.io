@@ -19,7 +19,7 @@ There are two types of SDKs:
 
 #### Get the Full SDK
 
-1. Obtain the latest OpenHarmony SDK from the OpenHarmony daily build pipline [Daily Build | OpenHarmony CI](https://ci.openharmony.cn/workbench/cicd/dailybuild/dailylist). The daily build pipeline builds system images, SDKs, etc.  
+1. Obtain the latest OpenHarmony SDK from the OpenHarmony daily build pipline | [Daily Build - OpenHarmony CI](https://ci.openharmony.cn/workbench/cicd/dailybuild/dailylist). The daily build pipeline builds system images, SDKs, etc.  
    
    Use conditional filtering, such as selecting the project as openharmony, selecting the target branch OpenHarmony-4.1-Release, selecting a date from the previous month, or manually choosing a range.  
    
@@ -35,8 +35,8 @@ There are two types of SDKs:
 | mac-sdk-full    | Full SDK for macOS. If you want to use system APIs, you need to use this SDK.                        | Available to OEMs, including system interfaces that require access to the system                                 |
 
 2. Make sure that the downloaded SDK is the full SDK.  
-   Check whether the downloaded file name contains "full-SDK."  
-   Check if the API includes system APIs such as `@ohos.app.ability.abilityManager.d.ts`, `@ohos.app.form.formInfo.d.ts`, and `@ohos.bluetooth.d.ts` 
+- Check whether the downloaded file name contains "full-SDK."  
+- Check if the API includes system APIs such as `@ohos.app.ability.abilityManager.d.ts`, `@ohos.app.form.formInfo.d.ts`, and `@ohos.bluetooth.d.ts` 
 
 #### Replace the Full SDK
 

@@ -1,7 +1,7 @@
 ---
 layout: default
 title: Community
-nav_order: 5
+nav_order: 6
 ---
 
 - [Public developers mailing lists](https://accounts.eclipse.org/mailing-list/oniro-dev)  

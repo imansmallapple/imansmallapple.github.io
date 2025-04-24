@@ -19,7 +19,7 @@ There are two types of SDKs:
 
 #### Get the Full SDK
 
-1. Obtain the latest OpenHarmony SDK from the OpenHarmony daily build pipline | [Daily Build - OpenHarmony CI](https://ci.openharmony.cn/workbench/cicd/dailybuild/dailylist). The daily build pipeline builds system images, SDKs, etc.  
+1. Obtain the latest OpenHarmony SDK from the OpenHarmony daily build pipline [Daily Build - OpenHarmony CI](https://ci.openharmony.cn/workbench/cicd/dailybuild/dailylist). The daily build pipeline builds system images, SDKs, etc.  
    
    Use conditional filtering, such as selecting the project as openharmony, selecting the target branch OpenHarmony-4.1-Release, selecting a date from the previous month, or manually choosing a range.  
    
@@ -42,7 +42,7 @@ There are two types of SDKs:
 
 Take the replacement of the full SDK of DevEco Studio 4.1, API 11 on Windows OS as an example.
 
-1. Backup and remove the local SDK:  
+3. Backup and remove the local SDK:  
    Make sure to select OpenHarmony then navigate to the directory where the original SDK is installed.
 <img src='./images/image20.png'>  
 

@@ -1,75 +1,60 @@
-# Oniro Documentation Structure Proposal
+# Oniro Documentation
 
-before go throught the docs, please have a brief look [here](/current-action-summary.md)
+Welcome to the Oniro Project documentation repository. This repository hosts the documentation for the Oniro Project, an Eclipse Foundation initiative dedicated to developing an open-source, vendor-neutral Operating System (OS) platform. Oniro builds upon OpenHarmony, extending its capabilities to provide a versatile platform for smart devices across various industries.
 
-[Introduction to Oniro](/introduction-to-oniro/introduction-to-oniro.md)
+## Documentation Structure
 
-[Operating System Architecture](/introduction-to-oniro/oniro-architecture.md)
+This documentation is powered by [Jekyll](https://jekyllrb.com) and uses the [Just the Docs](https://just-the-docs.github.io/just-the-docs/) theme. It is hosted on GitHub Pages and follows a structured approach to provide clear and accessible guidance for Oniro developers.
 
-[Application Development Guide](/application-development/index.md)  
-- Welcome/(Development Overview)
-    - What is this docs about?
+### View the Generated Documentation
 
-    - Development environment brief introduction
+The latest version of the Oniro Project documentation is available at: [docs.oniroproject.org](https://docs.oniroproject.org/).
 
-    - Onboarding developer learning path
-(e.g.: Graphs using xmind- to be edited)
+## Building the Documentation Locally
 
-- Quick Start
-(Should be similar with Android Studio/React Native's "Hello World" chapter)
-(Aim: Let developer have a fast experience about oniro application)
+To build and preview the documentation on your local machine, ensure that [Jekyll](https://jekyllrb.com) and [Bundler](https://bundler.io) are installed, then follow these steps:
 
-    - Environment Setup and Configuration
+1. Clone this repository:
+   ```sh
+   git clone https://github.com/eclipse-oniro4openharmony/eclipse-oniro4openharmony.github.io.git oniro-docs
+   cd oniro-docs
+   ```
+2. Install dependencies:
+   ```sh
+   bundle install
+   ```
+3. Build and serve the documentation:
+   ```sh
+   bundle exec jekyll serve
+   ```
+4. Open `http://localhost:4000/` in your web browser to view the documentation.
 
-    - Create your first Eclipse Oniro Application
-	A good reference is list as the following link:	(https://developer.android.com/codelabs/basic-android-kotlin-compose-first-app?continue=https%3A%2F%2Fdeveloper.android.com%2Fcourses%2Fpathways%2Fandroid-basics-compose-unit-1-pathway-2%23codelab-https%3A%2F%2Fdeveloper.android.com%2Fcodelabs%2Fbasic-android-kotlin-compose-first-app#0)
+## Publishing on GitHub Pages
 
-    - [Optional] Quick experience with UIAbility and ArkUI
+This repository is configured to use GitHub Actions for building and deploying documentation. To publish updates:
 
-- Basic Concepts
-    - Oniro Architecture introduction
-        - Stage model
+1. Push changes to the `main` branch.
+2. GitHub Actions will automatically build and deploy the documentation to GitHub Pages.
 
-    - ArkUI introduction
-	(Using brief words introduce ArkUI components)
-        - Samples
- 
-    - UIAbility and Component
-	- Samples
+## Using the Just the Docs Theme
 
-    - Resource File Categories
+This documentation is based on the [Just the Docs](https://just-the-docs.github.io/just-the-docs/) theme, which provides a minimal yet functional interface. The theme and its features are documented in the [Just the Docs repository](https://github.com/just-the-docs/just-the-docs).
 
-- Hands-On Tutorials
-    - Best practice(s)(List best developement mode and noticable events)
-		(Step by step)
-    - Samples
-    - codeLabs
-	
-- Trobleshooting
-    - Most common questions(5~10)
-	
-- API Reference
-(clear, conveniently navigate to API documentation)
+## Contributions
 
-- Contribution
-Clearly tell developers how to involve into contributing
+We welcome contributions to improve this documentation. If you would like to contribute:
 
-Device Development
-- Development Environment
-- Supported devices
-    - Virtual Device
-    - [Boards](/device-development/supported-device/boards/developer-boards.md)
-    - Developer Phone
-- [Quick build with Oniro](/device-development/quick-build-with-oniro.md)  
-- [Oniro IDE](/device-development/oniro-ide/oniro-ide.md)  
+1. Fork this repository.
+2. Create a feature branch.
+3. Submit a pull request with your changes.
 
-Policies and Compliance  
-- [Intellectual Property Policy](https://www.eclipse.org/org/documents/Eclipse_IP_Policy.pdf)
-- [Security Policies](https://oniroproject.readthedocs.io/en/latest/security/index.html#)  
+For more details, refer to our contribution guidelines.
 
-Community
-- [Code of Conduct](https://oniroproject.readthedocs.io/en/latest/code-of-conduct.html)  
-- [Mailing lists](https://oniroproject.org/community)  
-- [Chat](https://chat.eclipse.org/#/room/#oniro:matrix.eclipse.org)  
-- Social media: [LinkedIn](https://www.linkedin.com/showcase/oniro-project/), [X](https://x.com/Oniro_Project), [Mastodon](https://mastodon.social/@OniroProject)  
+## License and Attribution
+
+This repository is licensed under the [MIT License](https://opensource.org/licenses/MIT). The documentation framework is adapted from the [Just the Docs Template](https://github.com/just-the-docs/just-the-docs-template), ensuring a robust and customizable documentation experience.
+
+---
+
+For more details about the Oniro Project, visit the [Eclipse Oniro website](https://projects.eclipse.org/projects/oniro).
 

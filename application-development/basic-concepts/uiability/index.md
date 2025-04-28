@@ -2,14 +2,12 @@
 title: UIAbility
 parent: Basic Concepts
 grand_parent: Application Development
-nav_order: 4
+nav_order: 5
 layout: default
 has_children: true
 ---
 
 # UIAbility
-
-Text from source [here](https://github.com/eclipse-oniro-mirrors/docs/blob/OpenHarmony-4.1-Release/en/application-dev/reference/apis-ability-kit/js-apis-app-ability-uiAbility.md)
 
 UIAbility is a type of application component that provides the UI for user interactions. The UIAbility module provides lifecycle callbacks such as **component creation**, **destruction**, and **foreground/background switching**. 
 
@@ -24,3 +22,4 @@ You can develop a single UIAbility or multiple UIAbilities for your application 
 - If you want your application to be displayed as multiple missions in Recents or multiple windows to be opened simultaneously, use multiple UIAbilities.
 
 
+> Portions of this documentation are adapted from *[OpenHarmony Documentation](https://github.com/eclipse-oniro-mirrors/docs/blob/OpenHarmony-4.1-Release/en/application-dev/reference/apis-ability-kit/js-apis-app-ability-uiAbility.md)* by *OpenHarmony community*, licensed under [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/).

@@ -28,45 +28,41 @@ layout: default
   - [if/else: Conditional Rendering](#ifelse-conditional-rendering)  
   - [ForEach: Rendering of Repeated Content](#foreach-rendering-of-repeated-content)  
 
-[ArkTS Basics](/application-development/arkts-basics)  
-
 # Introduction
-Welcome to the tutorial for ArkTS, a TypeScript-based programming language designed specifically to build high-performance mobile applications.
+Welcome to the tutorial for ArkTS, a TypeScript-based programming language designed specifically for building high-performance mobile applications.
 
-ArkTS is optimized to provide better performance and efficiency, while still maintaining the familiar syntax of TypeScript.
+ArkTS is optimized to provide better performance and efficiency while maintaining the familiar syntax of TypeScript.
 
 # Basic Syntax Overview  
-[Text Source](https://gitee.com/openharmony/docs/blob/master/en/application-dev/quick-start/arkts-basic-syntax-overview.md)
-With a basic understanding of the ArkTS language, let's look into the composition of ArkTS through an example. As shown below, when the user clicks the button, the text content changes from Hello World to Hello ArkUI.  
+[Text Source](https://gitee.com/openharmony/docs/blob/master/en/application-dev/quick-start/arkts-basic-syntax-overview.md)  
+With a basic understanding of the ArkTS language, let's explore its composition through an example. As shown below, when the user clicks the button, the text content changes from "Hello World" to "Hello ArkUI."  
 
 **Figure 1** Example effect drawing  
     <img src='./images/image-basic/v1.gif'>
 
-In this example, the basic composition of ArkTS is as follows.
+In this example, the basic composition of ArkTS is as follows:
 
-
-  **Figure 2** Basic composition of ArkTS 
+**Figure 2** Basic composition of ArkTS  
     <img src='./images/image-basic/image3.png'>
 
 > **NOTE**
 >
 > The name of a custom variable cannot be the same as that of any universal attribute or event.
 
-
-- **Decorator**: design pattern used to decorate classes, structs, methods, and variables to assign special meanings to them. In the preceding sample code, `@Entry`, `@Component`, and `@State` are decorators. 
-  - `@Component` indicates a custom component
-  - `@Entry` indicates that the custom component is an entry component
+- **Decorator**: A design pattern used to decorate classes, structs, methods, and variables to assign special meanings to them. In the preceding sample code, `@Entry`, `@Component`, and `@State` are decorators. 
+  - `@Component` indicates a custom component.
+  - `@Entry` indicates that the custom component is an entry component.
   - `@State` indicates a state variable in the component, whose change will trigger the UI to re-render.
 
-- **UI description**: declarative description of the UI structure, such as the code block of the **build()** method.
+- **UI description**: A declarative description of the UI structure, such as the code block of the **build()** method.
 
-- **Custom component**: reusable UI unit, which can be used with other components, such as the struct **Hello** decorated by @Component.
+- **Custom component**: A reusable UI unit that can be used with other components, such as the struct **Hello** decorated by `@Component`.
 
-- **Built-in component**: default basic or container component preset in ArkTS, which can be directly invoked, such as **Column**, **Text**, **Divider**, and **Button** components in the sample code.
+- **Built-in component**: A default basic or container component preset in ArkTS, which can be directly invoked, such as **Column**, **Text**, **Divider**, and **Button** components in the sample code.
 
-- **Attribute method**: method used to configure component attributes, such as **fontSize()**, **width()**, **height()**, and **backgroundColor()**. You can configure multiple attributes of a component in method chaining mode.
+- **Attribute method**: A method used to configure component attributes, such as **fontSize()**, **width()**, **height()**, and **backgroundColor()**. You can configure multiple attributes of a component in method chaining mode.
 
-- **Event method**: method used to add the logic for a component to respond to an event. In the sample code, **onClick()** following **Button** is an event method. You can configure response logic for multiple events in method chaining mode.
+- **Event method**: A method used to add the logic for a component to respond to an event. In the sample code, **onClick()** following **Button** is an event method. You can configure response logic for multiple events in method chaining mode.
 
 # Key Features
 ## Declarative UI
@@ -1106,17 +1102,17 @@ In the preceding figure, the decorators in the components area are used for stat
 
 #### Decorators for component state management
 
-- **[@State](/application-development/state-management-decorators/state-decorator)**: An @State decorated variable holds the state of the owning component. It can be the source of one- or two-way synchronization with child components. When the variable changes, the dependent component will be updated. 
+- **[@State](/application-development/basic-concepts/state-management/state-decorator)**: An @State decorated variable holds the state of the owning component. It can be the source of one- or two-way synchronization with child components. When the variable changes, the dependent component will be updated. 
 
-- **[@Prop](/application-development/state-management-decorators/prop-decorator)**: An @Prop decorated variable can create one-way synchronization with a variable of its parent component. @Prop decorated variables are mutable, but changes are not synchronized to the parent component.
+- **[@Prop](/application-development/basic-concepts/state-management/prop-decorator)**: An @Prop decorated variable can create one-way synchronization with a variable of its parent component. @Prop decorated variables are mutable, but changes are not synchronized to the parent component.
 
-- **[@Link](/application-development/state-management-decorators/link-decorator)**: An @Link decorated variable creates two-way synchronization with a variable of its parent component. When the @Link decorated variable has its value changed, its source is updated as well; when the source updates, the @Link decorated variable will do as well.
+- **[@Link](/application-development/basic-concepts/state-management/link-decorator)**: An @Link decorated variable creates two-way synchronization with a variable of its parent component. When the @Link decorated variable has its value changed, its source is updated as well; when the source updates, the @Link decorated variable will do as well.
 
-- **[@Provide/@Consume](/application-development/state-management-decorators/provide-consume-decorator)**: Variables decorated by @Provide/@Consume are used for data synchronization across component levels. The components can be bound to the variables through aliases or attribute names. Data does not need to be passed through the named parameter mechanism.
+- **[@Provide/@Consume](/application-development/basic-concepts/state-management/provide-consume-decorator)**: Variables decorated by @Provide/@Consume are used for data synchronization across component levels. The components can be bound to the variables through aliases or attribute names. Data does not need to be passed through the named parameter mechanism.
 
-- **[@Observed](/application-development/state-management-decorators/observed-objectlink-decorator)**: @Observed is a class decorator. You can use it to decorate the class that has multiple levels of nested objects or arrays to be observed. Note that @Observed must be used with @ObjectLink for two-way synchronization or with @Prop for one-way synchronization.
+- **[@Observed](/application-development/basic-concepts/state-management/observed-objectlink-decorator)**: @Observed is a class decorator. You can use it to decorate the class that has multiple levels of nested objects or arrays to be observed. Note that @Observed must be used with @ObjectLink for two-way synchronization or with @Prop for one-way synchronization.
 
-- **[@ObjectLink](/application-development/state-management-decorators/observed-objectlink-decorator)**: An @ObjectLink decorated variable is used with an @Observed decorated class of the parent component for two-way data synchronization. It is applicable in scenarios involving multiple levels of nested objects or arrays in the class.
+- **[@ObjectLink](/application-development/basic-concepts/state-management/observed-objectlink-decorator)**: An @ObjectLink decorated variable is used with an @Observed decorated class of the parent component for two-way data synchronization. It is applicable in scenarios involving multiple levels of nested objects or arrays in the class.
 
 > **NOTE**
 >
@@ -1127,17 +1123,17 @@ In the preceding figure, the decorators in the components area are used for stat
 
 - **AppStorage**: a special **LocalStorage** singleton instance. It is an application-wide database bound to the application process and can be linked to components through the **@StorageProp** and **@StorageLink** decorators.
 
-- **[AppStorage](/application-development/state-management-decorators/appstorage)** is the hub for application state. Data that needs to interact with components (UI) is stored in AppStorage, including **[PersistentStorage](/application-development/state-management-decorators/persistentstorage)** and **Environment** data. The UI accesses the data through the decorators or APIs provided by AppStorage.
+- **[AppStorage](/application-development/basic-concepts/state-management/appstorage)** is the hub for application state. Data that needs to interact with components (UI) is stored in AppStorage, including **[PersistentStorage](/application-development/basic-concepts/state-management/persistentstorage)** and **Environment** data. The UI accesses the data through the decorators or APIs provided by AppStorage.
 
-- **[LocalStorage](/application-development/state-management-decorators/localstorage)**: an in-memory "database" for the application state declared by the application and typically used to share state across pages. It can be linked to the UI through the **@LocalStorageProp** and **@LocalStorageLink** decorators.
+- **[LocalStorage](/application-development/basic-concepts/state-management/localstorage)**: an in-memory "database" for the application state declared by the application and typically used to share state across pages. It can be linked to the UI through the **@LocalStorageProp** and **@LocalStorageLink** decorators.
 
 
 ### Other State Management Features
 
-**[@Watch](/application-development/state-management-decorators/watch-decorator)**: listens for the changes of state variables.
+**[@Watch](/application-development/basic-concepts/state-management/watch-decorator)**: listens for the changes of state variables.
 
 
-**[$$operator](/application-development/state-management-decorators/operator)**: provides a TS variable by-reference to a built-in component so that the variable value and the internal state of that component are kept in sync.
+**[$$operator](/application-development/basic-concepts/state-management/operator)**: provides a TS variable by-reference to a built-in component so that the variable value and the internal state of that component are kept in sync.
 
 
 ## Event Binding
@@ -1974,7 +1970,7 @@ In this example, the **Article** class is decorated by the @Observed decorator. 
 2. Because **article** in the child component **ArticleCard** uses the @ObjectLink decorator, the parent and child components share the same article data. As such, the values of **isLiked** and **likedCounts** of the first array item of **articleList** in the parent component are changed synchronously.
 3. When the parent component detects property changes of the data source array items, **ForEach** is triggered for re-rendering.
 4. Here, the **ForEach** key generation rule is the **id** property value of the array item. If **ForEach** traverses the new data source and finds no changes in the **id** values, no component is created.
-5. When the **ArticleCard** component corresponding to the first array item is rendered, the obtained values of **isLiked** and** likesCount** are the new values.
+5. When the **ArticleCard** component corresponding to the first array item is rendered, the obtained values of **isLiked** and **likedCounts** are the new values.
 
 #### Suggestions
 

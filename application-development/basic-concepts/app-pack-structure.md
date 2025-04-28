@@ -6,8 +6,6 @@ nav_order: 1
 layout: default
 --- 
 
->Text referenced from [here](https://gitee.com/openharmony/docs/blob/master/en/application-dev/quick-start/application-configuration-file-overview-stage.md)  and [here](https://github.com/eclipse-oniro-mirrors/docs/blob/OpenHarmony-4.1-Release/en/application-dev/application-models/application-models.md) 
-
 This topic explores the structure of an application package in the phase of application development.
 
 **Content table:**  
@@ -69,3 +67,7 @@ There are two types of modules by usage scenario:
  
   **Figure 2** HAR and HSP in the App Pack  
   ![alt text](./images/image-basic/image2.png)
+
+
+## Reference
+For additional information please refer to [Overview of Application Configuration Files in Stage Model](https://gitee.com/openharmony/docs/blob/master/en/application-dev/quick-start/application-configuration-file-overview-stage.md) and [Application Models](https://github.com/eclipse-oniro-mirrors/docs/blob/OpenHarmony-4.1-Release/en/application-dev/application-models/application-models.md)

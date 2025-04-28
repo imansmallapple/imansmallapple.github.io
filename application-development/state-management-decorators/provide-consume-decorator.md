@@ -100,4 +100,4 @@ struct CompA {
 </div>
 
 ### Additional Information
-For more detailed information, click the link [here](https://github.com/eclipse-oniro-mirrors/docs/blob/OpenHarmony-4.1-Release/en/application-dev/quick-start/arkts-provide-and-consume.md)  
+For additional information please refer to the [ArkTS Provide and Consume Decorator](https://github.com/eclipse-oniro-mirrors/docs/blob/OpenHarmony-4.1-Release/en/application-dev/quick-start/arkts-provide-and-consume.md) 

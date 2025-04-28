@@ -9,9 +9,7 @@ layout: default
 
 The declarative UI provides different common layouts like **Linear layout**, **Stack layout**, **Flex layout** and etc.
 
-In this chapter we will focus on **Linear Layout**, for more layout go through [layout overview](https://github.com/eclipse-oniro-mirrors/docs/blob/OpenHarmony-4.1-Release/en/application-dev/ui/arkts-layout-development-overview.md) documentation.
-
-Text from [source](https://github.com/eclipse-oniro-mirrors/docs/blob/OpenHarmony-4.1-Release/en/application-dev/ui/arkts-layout-development-linear.md)
+In this chapter we will focus on **Linear Layout**, for additional information please refer to [layout overview](https://github.com/eclipse-oniro-mirrors/docs/blob/OpenHarmony-4.1-Release/en/application-dev/ui/arkts-layout-development-overview.md) documentation.
 
 - [Linear Layout Basic Concepts](#basic-concepts)  
 - [Spacing of Child Elements in Arrangement Direction](#spacing-of-child-elements-in-arrangement-direction)  
@@ -628,3 +626,6 @@ Adaptive scaling means that the size of a child element is automatically adjuste
 <div style="text-align:center">
     <img src='../images/image-basic/image68.png'>
 </div>
+
+## Reference
+For additional information please refer to [Linear Layout](https://github.com/eclipse-oniro-mirrors/docs/blob/OpenHarmony-4.1-Release/en/application-dev/ui/arkts-layout-development-linear.md)

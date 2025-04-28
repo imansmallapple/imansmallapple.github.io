@@ -76,5 +76,4 @@ Processing steps:
 3. The **Text** component in the child component **TotalView** is re-rendered.
 
 ### Additional Information
-For more detailed information, click the link [here](https://github.com/eclipse-oniro-mirrors/docs/blob/OpenHarmony-4.1-Release/en/application-dev/quick-start/arkts-watch.md)
-
+For additional information please refer to the [ArkTS Watch Decorator](https://github.com/eclipse-oniro-mirrors/docs/blob/OpenHarmony-4.1-Release/en/application-dev/quick-start/arkts-watch.md)

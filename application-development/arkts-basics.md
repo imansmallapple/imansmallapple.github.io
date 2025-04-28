@@ -6,7 +6,6 @@ layout: default
 ---
 
 ## The Basics
-> Text from [source](https://gitee.com/openharmony/docs/blob/master/en/application-dev/quick-start/introduction-to-arkts.md#the-basics) 
 
 [Declarations](#declarations)  
 - [Variable Declaration](#variable-declaration)  
@@ -1941,3 +1940,6 @@ The keyword `this` used as a primary expression denotes a value that is a refere
 * Object being constructed.
 
 The value denoted by `this` in a lambda body and in the surrounding context is the same.
+
+## Reference
+For additional information please refer to the [ArkTS Basics](https://gitee.com/openharmony/docs/blob/master/en/application-dev/quick-start/introduction-to-arkts.md#the-basics) 

@@ -221,3 +221,6 @@ The display is previewed as the following:
 <div style="text-align:center">
     <img src='../basic-concepts/images/image-basic/image20.png'>
 </div>
+
+### Additional Information
+For additional information please refer to the [ArkTS Prop Decorator](https://github.com/eclipse-oniro-mirrors/docs/blob/OpenHarmony-4.1-Release/en/application-dev/quick-start/arkts-prop.md)

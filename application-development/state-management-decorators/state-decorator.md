@@ -107,4 +107,4 @@ struct MyComponent {
 </div>
 
 ### Additional Information
-For more detailed information, click the link [here](https://github.com/eclipse-oniro-mirrors/docs/blob/OpenHarmony-4.1-Release/en/application-dev/quick-start/arkts-state.md)
+For additional information please refer to the [ArkTS State Decorator](https://github.com/eclipse-oniro-mirrors/docs/blob/OpenHarmony-4.1-Release/en/application-dev/quick-start/arkts-state.md)

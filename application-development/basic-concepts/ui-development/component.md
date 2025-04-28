@@ -386,5 +386,5 @@ Grid() {
 >
 >When **rowsTemplate** or **columnsTemplate** is set for the **Grid** component, its **layoutDirection**, **maxCount**, **minCount**, and **cellLength** attributes do not take effect.
 
-### More Information
-You can find more details about **Grid** component from [this](https://github.com/eclipse-oniro-mirrors/docs/blob/OpenHarmony-4.1-Release/en/application-dev/ui/arkts-layout-development-create-grid.md) source.
+## Reference
+For additional information please refer to [Creating a List](https://github.com/eclipse-oniro-mirrors/docs/blob/OpenHarmony-4.1-Release/en/application-dev/ui/arkts-layout-development-create-list.md) and [Creating a Grid](https://github.com/eclipse-oniro-mirrors/docs/blob/OpenHarmony-4.1-Release/en/application-dev/ui/arkts-layout-development-create-grid.md)

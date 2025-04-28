@@ -5,7 +5,7 @@ nav_order: 2
 has_children: true
 ---
 
-The text base on [here](#https://github.com/imansmallapple/Oniro-docs/blob/main/application_development/development-overview.md)
+> Portions of this documentation are adapted from *[OpenHarmony docs](https://gitee.com/openharmony/docs)* by *OpenHarmony community*, licensed under [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/).
 
 # Development Overview
 
@@ -30,4 +30,3 @@ To set up your development environment, please refer to  [Environment Setup Guid
 To facilitate your application development, we provide development guidelines for reference.
 
 You can familiarize yourself with the application development process by [getting started with a simple project](./create-first-eclipse-oniro-app/index).
-

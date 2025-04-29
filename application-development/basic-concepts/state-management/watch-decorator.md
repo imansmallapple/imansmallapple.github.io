@@ -2,6 +2,7 @@
 title: Watch Decorator
 parent: State Management
 grand_parent: Basic Concepts
+nav_order: 9
 layout: default
 ---
 

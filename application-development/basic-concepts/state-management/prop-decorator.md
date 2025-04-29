@@ -2,6 +2,7 @@
 title: Prop Decorator
 parent: State Management
 grand_parent: Basic Concepts
+nav_order: 2
 layout: default
 ---
 

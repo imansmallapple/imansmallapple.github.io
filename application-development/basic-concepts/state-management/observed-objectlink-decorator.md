@@ -2,6 +2,7 @@
 title: Observed and ObjectLink Decorators
 parent: State Management
 grand_parent: Basic Concepts
+nav_order: 5
 layout: default
 ---
 

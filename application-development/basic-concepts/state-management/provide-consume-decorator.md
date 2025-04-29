@@ -1,6 +1,7 @@
 ---
 title: Provide and Consume Decorators
 parent: State Management
+grand_parent: Basic Concepts
 layout: default
 ---
 

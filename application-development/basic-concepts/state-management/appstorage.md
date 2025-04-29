@@ -1,6 +1,7 @@
 ---
 title: AppStorage
 parent: State Management
+grand_parent: Basic Concepts
 layout: default
 ---
 

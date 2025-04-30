@@ -6,7 +6,7 @@ layout: default
 nav_order: 5
 ---
 
-Due to the current limitations of DevEco Studio for OpenHarmony, only a limited number of application sample demos are available. However, you can still follow the instructions below to run the sample code using HarmonyOS NEXT.
+Due to the current limitations of DevEco Studio for OpenHarmony, only a limited number of application sample demos are available. 
 
 Available application samples for OpenHarmony with DevEco Studio 4.1(API 9/API 11):
 

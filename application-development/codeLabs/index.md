@@ -1,7 +1,9 @@
 ---
 layout: default
+parent: Application Development
 title: Code Labs
-nav_order: 7
+layout: default
+nav_order: 5
 ---
 
 Due to the current limitations of DevEco Studio for OpenHarmony, only a limited number of application sample demos are available. However, you can still follow the instructions below to run the sample code using HarmonyOS NEXT.
@@ -42,7 +44,6 @@ If you have any problem when building the application, check [Common Problems](#
 We need to change application permission level
 Solution:
 1. Open the directory where the OpenHarmony SDK is located (you can view it by clicking Tools > SDK Manager > OpenHarmony SDK in the DevEco Studio menu bar).
-
 <img src='./images/image1.png'>
 
 2. Navigate to the Toolchains > {Version} > lib folder under the SDK directory, and open the `UnsignedReleasedProfileTemplate.json` file.
@@ -59,13 +60,3 @@ Solution:
 ```
 > **Note:**
 If switching the system permissions does not work, try regenerating the automatic signature files.
-
-
-## Install DevEco Studio 5.0.2
-- Download and install [DevEco Studio 5.0.2](deveco-studio-5.0.6.210.exe)
-
-> **Note:**
->
-> If you already installed another version DevEco Studio, you can change the installation path to have multiple number of DevEco Studio on you device.
-
-- Replace full SDK 

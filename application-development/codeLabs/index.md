@@ -21,7 +21,7 @@ Available application samples for OpenHarmony with DevEco Studio 4.1(API 9/API 1
 - [Throw The Dice](https://github.com/eclipse-oniro4openharmony/app-ThrowTheDice)  
 
 
-The following apps are recommended to use real device, if you are not familar with runing application on real device, follow the instruction [Running Application on Real Device](../application-development/create-first-eclipse-oniro-app/run-real-device.html)
+The following apps are recommended to use real device, if you are not familar with runing application on real device, follow the instruction [Running Application on Real Device](/application-development/create-first-eclipse-oniro-app/run-real-device.html)
 
 If you have any problem when building the application, check [Common Problems](#common-problems)  
 

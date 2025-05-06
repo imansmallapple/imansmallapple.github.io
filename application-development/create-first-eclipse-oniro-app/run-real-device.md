@@ -45,7 +45,7 @@ After that, click `OK` for all windows.
     <img src='./images/image33.png'>
 </div> 
 
-- Check whether the HDC is running properly
+- Check whether the HDC is running properly.  
 You can open your `Command prompt` and type `hdc` to check.
 <div style="text-align:center">
     <img src='./images/image34.png'>
